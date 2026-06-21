@@ -1,0 +1,1 @@
+Node.js, JavaScript kodlarını tarayıcıdan bağımsız olarak sunucu tarafında çalıştıran açık kaynaklı bir JavaScript çalışma zamanı (runtime) ortamıdır. Web geliştiricilerinin sadece tarayıcıda çalışan JavaScript ile tam kapsamlı sunucu ve ağ uygulamaları geliştirmesine olanak tanır
