@@ -1,0 +1,79 @@
+[
+    {
+        "id": 0,
+        "productName": "Keçi Peyniri",
+        "image": "🧀",
+        "from": "Portekiz",
+        "nutrients": "A Vitamini, Kalsiyum",
+        "quantity": "250gr",
+        "price": "10.00",
+        "organic": false,
+        "description": "blablablaasdsadasdasdasd"
+    },
+    {
+        "id": 1,
+        "productName": "Taze Havuç",
+        "image": "🥕",
+        "from": "Fransa",
+        "nutrients": "B Vitamini, K Vitamini",
+        "quantity": "20 🥕",
+        "price": "20.00",
+        "organic": true,
+        "description": "blablablaasdsadasdasdasd"
+    },
+    {
+        "id": 3,
+        "productName": "Organik Domates",
+        "image": "🍅",
+        "from": "İtalya",
+        "nutrients": "C Vitamini, Likopen",
+        "quantity": "1 kg",
+        "price": "15.00",
+        "organic": true,
+        "description": "Taze, dalından koparılmış organik domatesler."
+    },
+    {
+        "id": 4,
+        "productName": "Badem Sütü",
+        "image": "🥛",
+        "from": "İspanya",
+        "nutrients": "E Vitamini, Kalsiyum",
+        "quantity": "1 Litre",
+        "price": "25.00",
+        "organic": false,
+        "description": "Laktozsuz, bitkisel badem sütü."
+    },
+    {
+        "id": 5,
+        "productName": "Doğal Bal",
+        "image": "🍯",
+        "from": "Türkiye",
+        "nutrients": "Antioksidanlar, C Vitamini",
+        "quantity": "500gr",
+        "price": "35.00",
+        "organic": true,
+        "description": "Yüksek rakımlarda üretilmiş katkısız doğal bal."
+    },
+    {
+        "id": 6,
+        "productName": "Avokado",
+        "image": "🥑",
+        "from": "Meksika",
+        "nutrients": "E Vitamini, Potasyum",
+        "quantity": "3 adet",
+        "price": "18.00",
+        "organic": false,
+        "description": "Kremamsı yapısıyla kahvaltılar için ideal avokadolar."
+    },
+    {
+        "id": 7,
+        "productName": "Organik Ispanak",
+        "image": "🥬",
+        "from": "Hollanda",
+        "nutrients": "Demir, A Vitamini",
+        "quantity": "500gr",
+        "price": "12.50",
+        "organic": true,
+        "description": "Vitamin deposu taze ıspanak yaprakları."
+    }
+]

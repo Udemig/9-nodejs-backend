@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{%PRODUCTNAME%} /// NODE FARM</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+
+      html {
+        font-size: 10px;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 20px 10px 10px;
+        line-height: 1.7;
+        font-family: sans-serif;
+        color: #555;
+        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+        min-height: 100vh;
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: white;
+        transform: skewY(-5deg);
+        text-align: center;
+        position: relative;
+        word-spacing: 3px;
+      }
+
+      h1::before {
+        content: "";
+        display: block;
+        height: 85%;
+        width: 65%;
+        max-width: 700px;
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        position: absolute;
+        z-index: -1;
+        left: 50.5%;
+        top: 50%;
+        opacity: 0.8;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .product {
+        width: 80%;
+        max-width: 60rem;
+        margin: 0 auto;
+        position: relative;
+        background: white;
+        margin-top: 9rem;
+        box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.2);
+      }
+
+      .product__hero {
+        position: relative;
+        height: 20rem;
+        overflow: hidden;
+      }
+
+      .product__hero::before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to left bottom, #9be15d, #00e3ae);
+        opacity: 0.5;
+      }
+
+      .product__emoji {
+        font-size: 15rem;
+        position: absolute;
+      }
+
+      .product__emoji--1 {
+        top: -4rem;
+        left: -2rem;
+        z-index: 10;
+      }
+
+      .product__emoji--2 {
+        top: -6rem;
+        left: 9rem;
+      }
+
+      .product__emoji--3 {
+        top: -4rem;
+        right: 15rem;
+      }
+
+      .product__emoji--4 {
+        top: -5rem;
+        right: 2rem;
+      }
+
+      .product__emoji--5 {
+        bottom: -9rem;
+        left: 18rem;
+      }
+
+      .product__emoji--6 {
+        bottom: -9rem;
+        left: 18rem;
+      }
+
+      .product__emoji--7 {
+        bottom: -12rem;
+        right: 14rem;
+      }
+
+      .product__emoji--8 {
+        bottom: -8rem;
+        right: -2rem;
+      }
+
+      .product__emoji--9 {
+        top: 3rem;
+        left: 12rem;
+      }
+
+      .product__organic {
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        z-index: 1000;
+        height: 8rem;
+        width: 8rem;
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(20deg);
+        box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.3);
+      }
+
+      .product__organic h5 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .product__back:link,
+      .product__back:visited {
+        position: absolute;
+        z-index: 1000;
+        top: 2rem;
+        left: 2rem;
+        background-color: white;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0 2rem;
+        border-radius: 30rem;
+        transition: all 0.3s;
+        color: #555;
+      }
+
+      .product__back:hover,
+      .product__back:active {
+        background-color: #79e17b;
+      }
+
+      .product__name {
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        padding: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        word-spacing: 2px;
+        color: white;
+      }
+
+      .product__details {
+        background-color: #eee;
+        padding: 4rem 6rem;
+        font-size: 1.3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+      }
+
+      .product__description {
+        padding: 5rem 6rem;
+        font-size: 1.3rem;
+        line-height: 1.8;
+      }
+
+      .product__link:link,
+      .product__link:visited {
+        display: block;
+        background-color: #79e17b;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        padding: 1.5rem;
+        transform: scale(1.055) skewX(-20deg);
+        box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+      }
+
+      .product__link:hover,
+      .product__link:active {
+        background-color: #9be15d;
+        transform: scale(1.1) skewX(-20deg);
+      }
+
+      .product__link span {
+        transform: skewX(20deg);
+      }
+
+      .emoji-left {
+        font-size: 2rem;
+        margin-right: 1rem;
+      }
+
+      .emoji-right {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>🌽 Node Farm 🥑</h1>
+
+      <figure class="product">
+        <div class="product__organic {%NOT_ORGANIC%}">
+          <h5>Organik</h5>
+        </div>
+
+        <a href="/urunler" class="product__back"> <span class="emoji-left">👈</span> Geri </a>
+
+        <div class="product__hero">
+          <span class="product__emoji product__emoji--1">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--2">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--3">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--4">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--5">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--6">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--7">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--8">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--9">{%IMAGE%}</span>
+          <span class="product__emoji product__emoji--10">{%IMAGE%}</span>
+        </div>
+
+        <h2 class="product__name">{%PRODUCTNAME%}</h2>
+
+        <div class="product__details">
+          <p><span class="emoji-left">🌍</span>From {%FROM%}</p>
+          <p><span class="emoji-left">❤️</span>{%NUTRIENTS%}</p>
+          <p><span class="emoji-left">🥡</span>{%QUANTITY%}</p>
+          <p><span class="emoji-left">💲</span>{%PRICE%}</p>
+        </div>
+
+        <a href="#" class="product__link">
+          <span class="emoji-left">🛒</span>
+          <span>Sepete Ekle ({%PRICE%})</span>
+        </a>
+
+        <p class="product__description">{%DESCRIPTION%}</p>
+      </figure>
+    </div>
+  </body>
+</html>
