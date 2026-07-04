@@ -14,8 +14,8 @@ const Home = () => {
     select: (res) => res.data,
   });
 
-  // aratılan kelimeyle eşeleşen filmleri filtrele
-  const filtredMovies = data.filter((movie) => {
+  // aratılan kelimeyle eşleşen filmleri filtrele
+  const filtredMovies = data?.filter((movie) => {
     // filmin adına göre ara
     const titleFilter = movie.title.toLowerCase().includes(searchValue);
 
@@ -25,10 +25,14 @@ const Home = () => {
     // yıla göre ara
     const yearFilter = movie.year.toLowerCase().includes(searchValue);
 
-    // todo: tür ve aktör adına göre ara
+    // aktör adına göre ara
+    const castFilter = movie.cast.some((actor) => actor.toLowerCase().includes(searchValue));
+
+    // türe göre arama
+    const genreFilter = movie.genre.some((genre) => genre.toLowerCase().includes(searchValue));
 
     // filtreleme sonucunu döndür
-    return titleFilter || directorFilter || yearFilter;
+    return titleFilter || directorFilter || yearFilter || castFilter || genreFilter;
   });
 
   return (

@@ -136,3 +136,13 @@ RESPONSE
 │
 ▼
 Frontend
+
+# PREFLIGHT
+
+- Preflight request (Ön Uçuş İsteği), CORS mekanizmasının bir parçasıdır.
+  Tarayıcı gerçek isteği sunucuya atmadan önce "Bu isteği atmama izin var mı?"
+  diye sunucuya sorduğu kontrol isteğidir.
+
+- Normal bir GET isteği doğrudan sunucuya gider ama POST,PUT,PATCH,DELETE gibi
+  methodlar daha riskli kabul edildiği için tarayıcı bu methodlarla istek atmadan önce
+  preflight isteği atarak backend'in onayını alır

@@ -4,6 +4,7 @@ const handlePut = require("./methods/handle-put");
 const handleDelete = require("./methods/handle-delete");
 const handlePost = require("./methods/handle-post");
 const handleNotFound = require("./methods/handle-not-found");
+const handleOptions = require("./methods/handle-options");
 
 //1) sunucuyu oluştur
 const server = http.createServer((req, res) => {
@@ -12,7 +13,7 @@ const server = http.createServer((req, res) => {
   // gönderilen cevab'ın veri tipini json olduğunu header'a ekle
   res.setHeader("Content-Type", "application/json");
 
-  // cors hatalarını engellemek için gerekli header
+  // cors hatalarını engellemek için gerekli header (GET)
   res.setHeader("Access-Control-Allow-Origin", "*");
 
   // istek /movies adresine atılmadıysa 404 döndür
@@ -28,6 +29,8 @@ const server = http.createServer((req, res) => {
       return handlePut(req, res);
     case "DELETE":
       return handleDelete(req, res);
+    case "OPTIONS":
+      return handleOptions(req, res);
     default:
       return handleNotFound(req, res);
   }
