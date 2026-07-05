@@ -30,6 +30,13 @@ const server = HTTP.createServer(async (req, res) => {
     return res.end(JSON.stringify({ message: "Kullanıcı kaldırıldı", id: id }));
   }
 
+  // cors hatalırını çöz
+  if (req.method === "OPTIONS") {
+    res.setHeader("Content-Type", "application/json");
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.end();
+  }
+
   // tanımlanmayan bir adrese istek gelirse
   res.writeHead(404);
   return res.end(JSON.stringify({ message: "Aradığınız adres bulunamadı" }));
