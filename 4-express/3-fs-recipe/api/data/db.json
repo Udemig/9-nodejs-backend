@@ -1,0 +1,244 @@
+[
+  {
+    "id": "y7y2178g6124",
+    "name": "İskender Kebap",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/%C4%B0skender%20Kebap.jpg",
+    "category": "Ana Yemek",
+    "ingredients": [
+      "500 gram döner eti",
+      "2 adet tırnak pide",
+      "2 yemek kaşığı tereyağı",
+      "2 su bardağı domates püresi",
+      "1 su bardağı yoğurt",
+      "2 adet sivri biber",
+      "1 çay kaşığı tuz"
+    ],
+    "time": 45,
+    "country": "Türkiye",
+    "instructions": [
+      "Pideleri küçük küpler halinde doğrayıp servis tabağına yerleştir.",
+      "Domates püresini tuzla birlikte küçük bir tencerede pişir.",
+      "Döner etini tavada kısa süre ısıt.",
+      "Pidelerin üzerine domates sosunun bir bölümünü gezdir.",
+      "Döner etlerini soslu pidelerin üzerine yerleştir.",
+      "Tereyağını köpürene kadar kızdırıp kebabın üzerine dök.",
+      "Yoğurt ve közlenmiş biberle servis et."
+    ],
+    "serving": "Sıcak olarak, yanında yoğurt ve közlenmiş sivri biberle servis edilir."
+  },
+  {
+    "id": "m4n7182k9036",
+    "name": "Kayseri Mantısı",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkish%20MANTI%20-%202.jpg",
+    "category": "Ana Yemek",
+    "ingredients": [
+      "3 su bardağı un",
+      "1 adet yumurta",
+      "1 su bardağı ılık su",
+      "250 gram kıyma",
+      "1 adet kuru soğan",
+      "2 su bardağı yoğurt",
+      "2 diş sarımsak",
+      "2 yemek kaşığı tereyağı",
+      "1 tatlı kaşığı pul biber",
+      "1 çay kaşığı tuz"
+    ],
+    "time": 75,
+    "country": "Türkiye",
+    "instructions": [
+      "Un, yumurta, su ve tuzu karıştırarak sert bir hamur yoğur.",
+      "Hamuru 20 dakika dinlendirdikten sonra ince biçimde aç.",
+      "Hamuru küçük kareler halinde kes.",
+      "Kıyma, rendelenmiş soğan, tuz ve karabiberi karıştır.",
+      "Her hamur karesinin ortasına kıymalı harç koyup köşelerini kapat.",
+      "Mantıları kaynar tuzlu suda yumuşayana kadar haşla.",
+      "Sarımsaklı yoğurdu hazırlayıp mantının üzerine dök.",
+      "Tereyağı ve pul biberi kızdırarak üzerine gezdir."
+    ],
+    "serving": "Sarımsaklı yoğurt, pul biber, kuru nane ve sumakla sıcak servis edilir."
+  },
+  {
+    "id": "l8h4029a6157",
+    "name": "Lahmacun",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lahmacun%20in%20Istanbul.jpg",
+    "category": "Hamur İşi",
+    "ingredients": [
+      "4 su bardağı un",
+      "1,5 su bardağı ılık su",
+      "1 tatlı kaşığı kuru maya",
+      "300 gram kıyma",
+      "2 adet domates",
+      "2 adet sivri biber",
+      "1 adet kuru soğan",
+      "2 diş sarımsak",
+      "Yarım demet maydanoz",
+      "1 yemek kaşığı biber salçası",
+      "1 çay kaşığı pul biber",
+      "1 çay kaşığı tuz"
+    ],
+    "time": 60,
+    "country": "Türkiye",
+    "instructions": [
+      "Un, maya, su ve tuzla yumuşak bir hamur yoğur.",
+      "Hamurun üzerini kapatıp yaklaşık 30 dakika dinlendir.",
+      "Domates, biber, soğan, sarımsak ve maydanozu ince şekilde doğra.",
+      "Doğranmış sebzeleri kıyma, salça ve baharatlarla karıştır.",
+      "Hamuru eşit bezelere ayırıp ince ve yuvarlak biçimde aç.",
+      "Kıymalı harcı hamurların üzerine ince bir katman halinde yay.",
+      "Önceden ısıtılmış 240 derece fırında kenarları kızarana kadar pişir."
+    ],
+    "serving": "Maydanoz, limon, sumaklı soğan ve ayranla sıcak servis edilir."
+  },
+  {
+    "id": "b5k6913v2048",
+    "name": "Fıstıklı Baklava",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Baklava%20-%20Turkish%20special%2C%2080-ply.JPEG",
+    "category": "Tatlı",
+    "ingredients": [
+      "40 adet baklavalık yufka",
+      "300 gram Antep fıstığı",
+      "250 gram tereyağı",
+      "3 su bardağı toz şeker",
+      "3 su bardağı su",
+      "1 tatlı kaşığı limon suyu"
+    ],
+    "time": 90,
+    "country": "Türkiye",
+    "instructions": [
+      "Şeker ve suyu kaynatıp limon suyunu ekleyerek şerbeti hazırla.",
+      "Tereyağını eritip üzerinde oluşan köpüğü temizle.",
+      "Fırın tepsisini eritilmiş tereyağıyla yağla.",
+      "Yufkaları tepsiye kat kat dizerken aralarına tereyağı sür.",
+      "Yufkaların yarısına ulaştığında çekilmiş Antep fıstığını eşit şekilde yay.",
+      "Kalan yufkaları da aralarını yağlayarak tepsiye yerleştir.",
+      "Baklavayı dilimleyip kalan tereyağını üzerine gezdir.",
+      "Önceden ısıtılmış 180 derece fırında kızarana kadar pişir.",
+      "Sıcak baklavanın üzerine soğumuş şerbeti döküp dinlendir."
+    ],
+    "serving": "Şerbetini çektikten sonra üzerine Antep fıstığı serpilerek servis edilir."
+  },
+  {
+    "id": "n3m8062e4719",
+    "name": "Menemen",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Menemen%20in%20pan.jpg",
+    "category": "Kahvaltı",
+    "ingredients": [
+      "4 adet yumurta",
+      "3 adet domates",
+      "3 adet sivri biber",
+      "1 yemek kaşığı tereyağı",
+      "1 yemek kaşığı zeytinyağı",
+      "1 çay kaşığı tuz",
+      "Yarım çay kaşığı karabiber",
+      "Yarım çay kaşığı pul biber"
+    ],
+    "time": 20,
+    "country": "Türkiye",
+    "instructions": [
+      "Biberleri küçük parçalar halinde doğra.",
+      "Domateslerin kabuklarını soyup küp küp doğra.",
+      "Tereyağı ve zeytinyağını tavada ısıt.",
+      "Biberleri tavaya alıp hafifçe yumuşayana kadar kavur.",
+      "Domatesleri ekleyip suyunu bir miktar çekene kadar pişir.",
+      "Yumurtaları tavaya kırıp istediğin kıvama göre karıştır.",
+      "Tuz, karabiber ve pul biber ekleyerek kısa süre daha pişir."
+    ],
+    "serving": "Tavada, sıcak ekmek ve çay eşliğinde servis edilir."
+  },
+  {
+    "id": "r6c2941s8305",
+    "name": "Mercimek Çorbası",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercimek%20or%20Turkish%20lentil%20soup.jpg",
+    "category": "Çorba",
+    "ingredients": [
+      "1 su bardağı kırmızı mercimek",
+      "1 adet kuru soğan",
+      "1 adet havuç",
+      "1 adet patates",
+      "1 yemek kaşığı un",
+      "2 yemek kaşığı zeytinyağı",
+      "6 su bardağı su",
+      "1 çay kaşığı tuz",
+      "1 çay kaşığı kimyon",
+      "1 yemek kaşığı tereyağı",
+      "1 çay kaşığı pul biber"
+    ],
+    "time": 40,
+    "country": "Türkiye",
+    "instructions": [
+      "Mercimeği su berraklaşana kadar yıka.",
+      "Soğan, havuç ve patatesi küçük parçalar halinde doğra.",
+      "Zeytinyağını tencerede ısıtıp soğanı kavur.",
+      "Unu ekleyip kokusu çıkana kadar kısa süre karıştır.",
+      "Havuç, patates, mercimek ve suyu tencereye ekle.",
+      "Sebzeler ve mercimek yumuşayana kadar pişir.",
+      "Çorbayı pürüzsüz hale gelene kadar blenderdan geçir.",
+      "Tuz ve kimyon ekleyip birkaç dakika daha kaynat.",
+      "Tereyağı ve pul biberle hazırlanan sosu üzerine gezdir."
+    ],
+    "serving": "Limon dilimleri, kızarmış ekmek ve pul biberli tereyağıyla sıcak servis edilir."
+  },
+  {
+    "id": "k9y5037r1264",
+    "name": "Karnıyarık",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Karniyarik.jpg",
+    "category": "Ana Yemek",
+    "ingredients": [
+      "6 adet patlıcan",
+      "300 gram kıyma",
+      "1 adet kuru soğan",
+      "2 adet domates",
+      "3 adet sivri biber",
+      "2 diş sarımsak",
+      "1 yemek kaşığı domates salçası",
+      "3 yemek kaşığı zeytinyağı",
+      "1 su bardağı sıcak su",
+      "1 çay kaşığı tuz",
+      "Yarım çay kaşığı karabiber"
+    ],
+    "time": 70,
+    "country": "Türkiye",
+    "instructions": [
+      "Patlıcanları alacalı soyup tuzlu suda yaklaşık 20 dakika beklet.",
+      "Patlıcanları kurulayıp tavada veya fırında yumuşayana kadar pişir.",
+      "Soğan ve sarımsağı zeytinyağında kavur.",
+      "Kıymayı ekleyip suyunu çekene kadar pişir.",
+      "Doğranmış domates, biber, salça ve baharatları ekle.",
+      "Patlıcanların ortasını uzunlamasına açarak içlerini genişlet.",
+      "Hazırlanan kıymalı harcı patlıcanların içine paylaştır.",
+      "Patlıcanları fırın kabına yerleştirip sıcak suyu kaba ekle.",
+      "Önceden ısıtılmış 190 derece fırında yaklaşık 25 dakika pişir."
+    ],
+    "serving": "Pirinç pilavı, cacık ve közlenmiş biberle sıcak servis edilir."
+  },
+  {
+    "id": "q2f7185u4093",
+    "name": "Hatay Künefesi",
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkish%20k%C3%BCnefe%20and%20tea.jpg",
+    "category": "Tatlı",
+    "ingredients": [
+      "400 gram tel kadayıf",
+      "250 gram tuzsuz künefe peyniri",
+      "150 gram tereyağı",
+      "2 yemek kaşığı üzüm pekmezi",
+      "2 su bardağı toz şeker",
+      "2 su bardağı su",
+      "1 tatlı kaşığı limon suyu",
+      "3 yemek kaşığı Antep fıstığı"
+    ],
+    "time": 45,
+    "country": "Türkiye",
+    "instructions": [
+      "Şeker ve suyu kaynatıp limon suyunu ekleyerek şerbeti hazırla.",
+      "Kadayıfı elinle küçük parçalara ayır.",
+      "Kadayıfı eritilmiş tereyağıyla iyice karıştır.",
+      "Künefe tepsisini pekmez ve az miktarda tereyağıyla yağla.",
+      "Kadayıfın yarısını tepsiye yayıp bastırarak sıkıştır.",
+      "Dilimlenmiş künefe peynirini kadayıfın üzerine yerleştir.",
+      "Kalan kadayıfı peynirin üzerine yayıp yeniden bastır.",
+      "Künefeyi ocakta veya fırında her iki yüzü kızarana kadar pişir.",
+      "Sıcak künefenin üzerine ılık şerbeti gezdir."
+    ],
+    "serving": "Üzerine Antep fıstığı serpilerek sıcak servis edilir; yanında kaymak veya dondurma sunulabilir."
+  }
+]

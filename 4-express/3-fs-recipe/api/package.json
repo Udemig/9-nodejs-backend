@@ -1,0 +1,17 @@
+{
+  "name": "api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "tarif api",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Furkan Evin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}

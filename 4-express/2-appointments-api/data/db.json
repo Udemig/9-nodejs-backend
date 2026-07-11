@@ -11,11 +11,11 @@
     "doctor": "Ali Kaya",
     "department": "Kardiyoloji",
     "appointment_type": "emergency",
-    "status": "pending",
+    "status": "completed",
     "notes": "Göğüs ağrısı şikayeti ile acil değerlendirme talebi.",
     "date": 1736269200000,
     "createdAt": 1736182800000,
-    "updatedAt": 1736186400000
+    "updatedAt": 1783761757837
   },
   {
     "id": "apt_9fh47djs83ksl20dhg72",
@@ -142,23 +142,5 @@
     "date": 1736874000000,
     "createdAt": 1736186400000,
     "updatedAt": 1736186400000
-  },
-  {
-    "patient": {
-      "name": "Ece Yıldız",
-      "tcNo": "39284756109",
-      "phone": "0542 315 67 89",
-      "gender": "Kadın",
-      "age": 29
-    },
-    "doctor": "Merve Çetin",
-    "department": "Göz Hastalıkları",
-    "appointment_type": "routine",
-    "status": "completed",
-    "notes": "Görme kontrolü ve rutin muayene tamamlandı.",
-    "date": 1737046800000,
-    "id": "947b9f50-e939-4e97-83af-5e579272172c",
-    "createdAt": 1783251818332,
-    "updatedAt": 1783251818332
   }
 ]

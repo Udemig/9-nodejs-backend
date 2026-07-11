@@ -10,7 +10,7 @@ const write = require("../utils/write");
 */
 
 // randevu verilerini json dosyasından al
-const appointments = JSON.parse(fs.readFileSync(`${__dirname}/../data/db.json`, "utf-8"));
+let appointments = JSON.parse(fs.readFileSync(`${__dirname}/../data/db.json`, "utf-8"));
 
 exports.getAllAppointments = (req, res) => {
   res
@@ -73,16 +73,28 @@ exports.updateAppointment = (req, res) => {
   // id'si bilinen randevun dizideki sırasını bul
   const index = appointments.findIndex((i) => i.id === id);
 
-  // TODO: isteğin body kısmında gelen veriler ile randevu nesnesini güncelle
+  //  isteğin body kısmında gelen veriler ile randevu nesnesini güncelle
+  const updated = { ...appointments[index], ...req.body, updatedAt: new Date().getTime() };
 
   // dizideki elemanı güncelle
+  appointments[index] = updated;
 
   // json dosyasını güncelle
+  write(appointments);
 
   // client'a yanıt gönder
-  res.status(200).json({ message: "Randevular listelendi" });
+  res.status(200).json({ message: "Randevu güncellendi", data: updated });
 };
 
 exports.deleteAppointment = (req, res) => {
-  res.status(200).json({ message: "Randevular listelendi" });
+  // silinecek randevunun id'sine eriş
+  const { id } = req.params;
+
+  // id'si bilenen randevuyu diziden kaldır
+  appointments = appointments.filter((i) => i.id !== id);
+
+  // db.json'ı güncelle
+  write(appointments);
+
+  res.status(204).json({ message: "Randevu kaldırıldı" });
 };
