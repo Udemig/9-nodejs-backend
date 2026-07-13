@@ -38,3 +38,14 @@ module.exports = routes;
 // module export
 export default routes;
 ```
+
+## Frontend Kütüphaneleri
+
+- react
+- react-router-dom
+- tailwindcss
+- axios
+- @tanstack/react-query
+- react-select
+- lucide-react
+- react-toastify
