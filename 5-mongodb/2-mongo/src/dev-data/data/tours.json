@@ -1,0 +1,674 @@
+[
+  {
+    "startLocation": {
+      "description": "İstanbul, Türkiye",
+      "type": "Point",
+      "coordinates": [28.978359, 41.008238],
+      "address": "Sirkeci, Fatih/İstanbul, Türkiye"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+    "startDates": ["2021-06-19T09:00:00.000Z", "2021-07-20T09:00:00.000Z", "2021-08-18T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2955",
+    "name": "Deniz Kaşifi",
+    "duration": 7,
+    "maxGroupSize": 15,
+    "difficulty": "orta",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a1f4e2f8fb814b56fa185"],
+    "price": 497,
+    "summary": "Türkiye’nin nefes kesen kıyılarını yürüyerek ve tekneyle keşfetme turu",
+    "description": "Bu turda Türkiye’nin kıyı şeridinin en etkileyici rotalarını adım adım deneyimlersiniz; sakin koylar, gün batımı manzaraları ve kısa deniz yolculukları bir arada.\nGün içinde keyifli yürüyüşler yapılır, ardından denize açılarak farklı koylara geçilir. Program, hem dinlenmek hem de keşfetmek isteyenler için dengeli şekilde tasarlanmıştır.",
+    "imageCover": "tour-2-cover.jpg",
+    "locations": [
+      {
+        "description": "Sultanahmet Sahil Yürüyüş Yolu",
+        "type": "Point",
+        "coordinates": [28.979885, 41.005321],
+        "day": 1
+      },
+      {
+        "description": "Adalar (Büyükada) İskelesi ve Çevresi",
+        "type": "Point",
+        "coordinates": [29.123919, 40.874389],
+        "day": 2
+      },
+      {
+        "description": "Şile Sahili",
+        "type": "Point",
+        "coordinates": [29.613331, 41.175213],
+        "day": 3
+      },
+      {
+        "description": "Kilyos Sahili",
+        "type": "Point",
+        "coordinates": [29.034512, 41.242318],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Trabzon, Türkiye",
+      "type": "Point",
+      "coordinates": [39.7178, 41.0027],
+      "address": "Ortahisar/Trabzon, Türkiye"
+    },
+    "ratingsAverage": 5,
+    "ratingsQuantity": 9,
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"],
+    "startDates": ["2021-04-25T09:00:00.000Z", "2021-07-20T09:00:00.000Z", "2021-10-05T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2951",
+    "name": "Orman Yürüyüşçüsü",
+    "duration": 5,
+    "maxGroupSize": 25,
+    "difficulty": "kolay",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a201e2f8fb814b56fa186", "5c8a1f292f8fb814b56fa184"],
+    "price": 397,
+    "summary": "Karadeniz’in büyüleyici yaylalarında nefes kesen yürüyüş rotası",
+    "description": "Karadeniz’in yeşil dokusu içinde tempolu ama keyifli yürüyüşler yapılır; fotoğraf molaları ve yöresel lezzet duraklarıyla rota zenginleştirilir.\nGünler ilerledikçe manzaralar değişir; sis denizi, yayla yolları ve serin orman patikaları ile doğanın tam ortasında olursunuz.",
+    "imageCover": "tour-1-cover.jpg",
+    "locations": [
+      {
+        "description": "Uzungöl ve Çevre Parkurları",
+        "type": "Point",
+        "coordinates": [40.286, 40.6209],
+        "day": 1
+      },
+      {
+        "description": "Ayder Yaylası",
+        "type": "Point",
+        "coordinates": [40.9473, 40.9547],
+        "day": 3
+      },
+      {
+        "description": "Kaçkar Dağları Milli Parkı (Giriş Noktası)",
+        "type": "Point",
+        "coordinates": [41.2487, 40.8616],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Erzurum, Türkiye",
+      "type": "Point",
+      "coordinates": [41.2769, 39.9043],
+      "address": "Yakutiye/Erzurum, Türkiye"
+    },
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 6,
+    "images": ["tour-3-1.jpg", "tour-3-2.jpg", "tour-3-3.jpg"],
+    "startDates": ["2022-01-05T10:00:00.000Z", "2022-02-12T10:00:00.000Z", "2023-01-06T10:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c295a",
+    "name": "Kar Maceracısı",
+    "duration": 4,
+    "maxGroupSize": 10,
+    "difficulty": "zor",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a23412f8fb814b56fa18c", "5c8a1f4e2f8fb814b56fa185"],
+    "price": 997,
+    "summary": "Palandöken’de snowboard ve kayakla dolu heyecan verici kış macerası",
+    "description": "Karlı parkurlarda kayak ve snowboard deneyimi yaşanır; günlük antrenmanlar ve güvenlik brifingleriyle tempo kademeli artırılır.\nZirve manzaraları, soğuk hava adrenalini ve akşamları sıcak mola noktalarıyla kışın en keyifli halini yaşarsınız.",
+    "imageCover": "tour-3-cover.jpg",
+    "locations": [
+      {
+        "description": "Palandöken Kayak Merkezi",
+        "type": "Point",
+        "coordinates": [41.2706, 39.8789],
+        "day": 1
+      },
+      {
+        "description": "Konaklı Kayak Merkezi",
+        "type": "Point",
+        "coordinates": [41.1677, 39.9919],
+        "day": 2
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Antalya, Türkiye",
+      "type": "Point",
+      "coordinates": [30.7133, 36.8969],
+      "address": "Muratpaşa/Antalya, Türkiye"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "images": ["tour-5-1.jpg", "tour-5-2.jpg", "tour-5-3.jpg"],
+    "startDates": ["2021-08-05T09:00:00.000Z", "2022-03-20T10:00:00.000Z", "2022-08-12T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2961",
+    "name": "Park Kampçısı",
+    "duration": 10,
+    "maxGroupSize": 15,
+    "difficulty": "orta",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a23412f8fb814b56fa18c", "5c8a201e2f8fb814b56fa186"],
+    "price": 1497,
+    "summary": "Türkiye’nin en etkileyici milli parklarında doğayla iç içe kamp deneyimi",
+    "description": "Bu rotada deniz-kanyon-dağ üçgeninde kamp kurulur; her gün farklı bir doğa harikası ziyaret edilir ve manzara yürüyüşleri yapılır.\nProgram; kamp düzeni, doğa güvenliği ve sürdürülebilir iz bırakmama yaklaşımıyla planlanmıştır.",
+    "imageCover": "tour-5-cover.jpg",
+    "locations": [
+      {
+        "description": "Köprülü Kanyon Milli Parkı",
+        "type": "Point",
+        "coordinates": [31.171, 37.1809],
+        "day": 1
+      },
+      {
+        "description": "Saklıkent Kanyonu",
+        "type": "Point",
+        "coordinates": [29.4014, 36.4516],
+        "day": 4
+      },
+      {
+        "description": "Güllük Dağı (Termessos) Milli Parkı",
+        "type": "Point",
+        "coordinates": [30.5312, 37.0056],
+        "day": 5
+      },
+      {
+        "description": "Beydağları Sahil Milli Parkı (Olympos Çevresi)",
+        "type": "Point",
+        "coordinates": [30.3367, 36.3908],
+        "day": 9
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "İzmir, Türkiye",
+      "type": "Point",
+      "coordinates": [27.1384, 38.4237],
+      "address": "Konak/İzmir, Türkiye"
+    },
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 5,
+    "images": ["tour-4-1.jpg", "tour-4-2.jpg", "tour-4-3.jpg"],
+    "startDates": ["2021-03-11T10:00:00.000Z", "2021-05-02T09:00:00.000Z", "2021-06-09T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c295d",
+    "name": "Şehir Gezginci",
+    "duration": 9,
+    "maxGroupSize": 20,
+    "difficulty": "kolay",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a201e2f8fb814b56fa186"],
+    "price": 1197,
+    "summary": "Türkiye’nin en güzel şehirlerinde dolu dolu bir şehir keşif rotası",
+    "description": "Şehir dokusunu, tarihî durakları ve yerel lezzetleri bir araya getiren bu program; tempolu ama yorucu olmayan bir keşif akışı sunar.\nKültür, gastronomi ve sahil yürüyüşleri dengeli şekilde planlanır; her şehirde kendine özgü bir hikâye yakalarsınız.",
+    "imageCover": "tour-4-cover.jpg",
+    "locations": [
+      {
+        "description": "İzmir Kordon ve Konak Meydanı",
+        "type": "Point",
+        "coordinates": [27.1287, 38.4192],
+        "day": 1
+      },
+      {
+        "description": "İstanbul (Tarihi Yarımada)",
+        "type": "Point",
+        "coordinates": [28.9799, 41.0086],
+        "day": 3
+      },
+      {
+        "description": "Ankara (Anıtkabir ve Çevresi)",
+        "type": "Point",
+        "coordinates": [32.8369, 39.9251],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Muğla, Türkiye",
+      "type": "Point",
+      "coordinates": [28.3665, 37.2153],
+      "address": "Menteşe/Muğla, Türkiye"
+    },
+    "ratingsAverage": 3.9,
+    "ratingsQuantity": 7,
+    "images": ["tour-6-1.jpg", "tour-6-2.jpg", "tour-6-3.jpg"],
+    "startDates": ["2021-07-19T09:00:00.000Z", "2021-09-06T09:00:00.000Z", "2022-03-18T10:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2966",
+    "name": "Spor Tutkunu",
+    "duration": 14,
+    "maxGroupSize": 8,
+    "difficulty": "zor",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a1f292f8fb814b56fa184", "5c8a1f4e2f8fb814b56fa185"],
+    "price": 2997,
+    "summary": "Sörf, kaykay, yamaç paraşütü, tırmanış ve daha fazlası: hepsi tek turda",
+    "description": "Adrenalin ve doğa bir arada: kıyıda su sporları, şehirde kaykay noktaları, ardından gökyüzünde yamaç paraşütü ve kaya tırmanışıyla program zirve yapar.\nAktiviteler, güvenlik öncelikli ve kademeli zorluk prensibiyle ilerler; yeni başlayanlar da kendine alan bulur.",
+    "imageCover": "tour-6-cover.jpg",
+    "locations": [
+      {
+        "description": "Fethiye Ölüdeniz Plajı",
+        "type": "Point",
+        "coordinates": [29.1216, 36.5479],
+        "day": 1
+      },
+      {
+        "description": "Muğla (Akyaka Kite/Sörf Alanı)",
+        "type": "Point",
+        "coordinates": [28.3318, 37.0535],
+        "day": 4
+      },
+      {
+        "description": "Fethiye Babadağ Yamaç Paraşütü Noktası",
+        "type": "Point",
+        "coordinates": [29.1693, 36.5415],
+        "day": 6
+      },
+      {
+        "description": "Dalaman Çayı Rafting Bölgesi",
+        "type": "Point",
+        "coordinates": [28.7352, 36.8784],
+        "day": 7
+      },
+      {
+        "description": "Geyikbayırı Tırmanış Bölgesi (Antalya)",
+        "type": "Point",
+        "coordinates": [30.4873, 36.9697],
+        "day": 10
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Nevşehir (Kapadokya), Türkiye",
+      "type": "Point",
+      "coordinates": [34.714, 38.6244],
+      "address": "Göreme/Avanos/Nevşehir, Türkiye"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 6,
+    "images": ["tour-8-1.jpg", "tour-8-2.jpg", "tour-8-3.jpg"],
+    "startDates": ["2021-03-23T10:00:00.000Z", "2021-10-25T09:00:00.000Z", "2022-01-30T10:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2970",
+    "name": "Yıldız Gözlemcisi",
+    "duration": 9,
+    "maxGroupSize": 8,
+    "difficulty": "orta",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a1f292f8fb814b56fa184"],
+    "price": 2997,
+    "summary": "Gece gökyüzünü izlemek için Türkiye’nin en sakin ve etkileyici noktaları",
+    "description": "Işık kirliliğinin düşük olduğu bölgelerde gece gözlemi yapılır; gündüzleri vadi yürüyüşleri ve kültürel duraklarla rota zenginleşir.\nGökyüzü gözlemi için temel ekipman ve yönlendirme sağlanır; amaç, rahat bir tempoda unutulmaz bir gece manzarası yakalamaktır.",
+    "imageCover": "tour-8-cover.jpg",
+    "locations": [
+      {
+        "description": "Göreme Açık Alan Gözlem Noktası",
+        "type": "Point",
+        "coordinates": [34.8297, 38.6431],
+        "day": 1
+      },
+      {
+        "description": "Ihlara Vadisi",
+        "type": "Point",
+        "coordinates": [34.2417, 38.2567],
+        "day": 3
+      },
+      {
+        "description": "Tuz Gölü Seyir Alanı",
+        "type": "Point",
+        "coordinates": [33.4175, 38.7347],
+        "day": 6
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Kars, Türkiye",
+      "type": "Point",
+      "coordinates": [43.0975, 40.6013],
+      "address": "Merkez/Kars, Türkiye"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 7,
+    "images": ["tour-9-1.jpg", "tour-9-2.jpg", "tour-9-3.jpg"],
+    "startDates": ["2021-12-16T10:00:00.000Z", "2022-01-16T10:00:00.000Z", "2022-12-12T10:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c2974",
+    "name": "Kuzey Esintisi",
+    "duration": 3,
+    "maxGroupSize": 12,
+    "difficulty": "kolay",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a201e2f8fb814b56fa186", "5c8a23412f8fb814b56fa18c"],
+    "price": 1497,
+    "summary": "Kars ve Sarıkamış’ta kış atmosferini en iyi hissedeceğiniz kısa kaçamak",
+    "description": "Doğu’nun kış masalını yaşatan bu kısa rotada; tarihi duraklar, kar manzaraları ve sıcak mola noktaları bir araya gelir.\nProgram, yoğun ama keyifli bir akışla planlanır; kısa sürede çok şey görmek isteyenler için idealdir.",
+    "imageCover": "tour-9-cover.jpg",
+    "locations": [
+      {
+        "description": "Kars Merkez ve Tarihi Sokaklar",
+        "type": "Point",
+        "coordinates": [43.0975, 40.6013],
+        "day": 1
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Tekirdağ (Şarköy), Türkiye",
+      "type": "Point",
+      "coordinates": [27.1062, 40.6129],
+      "address": "Şarköy/Tekirdağ, Türkiye"
+    },
+    "ratingsAverage": 4.4,
+    "ratingsQuantity": 7,
+    "images": ["tour-7-1.jpg", "tour-7-2.jpg", "tour-7-3.jpg"],
+    "startDates": ["2021-02-12T10:00:00.000Z", "2021-04-14T09:00:00.000Z", "2021-09-01T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c296c",
+    "name": "Şarap Tadımcısı",
+    "duration": 5,
+    "maxGroupSize": 8,
+    "difficulty": "kolay",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a23412f8fb814b56fa18c"],
+    "price": 1997,
+    "summary": "Bağ rotaları, manzaralı tadımlar, özel fıçı denemeleri ve çok daha fazlası",
+    "description": "Marmara’nın bağ rotalarında üzümün hikâyesini yerinde dinler, şarap üretim süreçlerini görür ve rehber eşliğinde tadım deneyimi yaşarsınız.\nTadımlar; manzara durakları ve yerel eşleşmelerle desteklenir. Amaç, acele etmeden lezzetin tadını çıkarmaktır.",
+    "imageCover": "tour-7-cover.jpg",
+    "locations": [
+      {
+        "description": "Şarköy Bağları (Tadım Noktası 1)",
+        "type": "Point",
+        "coordinates": [27.1126, 40.6159],
+        "day": 1
+      },
+      {
+        "description": "Mürefte Bağ Rotası (Tadım Noktası 2)",
+        "type": "Point",
+        "coordinates": [27.3742, 40.6716],
+        "day": 3
+      },
+      {
+        "description": "Uçmakdere Seyir ve Tadım Noktası",
+        "type": "Point",
+        "coordinates": [27.4547, 40.7594],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Gaziantep, Türkiye",
+      "type": "Point",
+      "coordinates": [37.3826, 37.0662],
+      "address": "Şahinbey/Gaziantep, Türkiye"
+    },
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 18,
+    "images": ["tour-10-1.jpg", "tour-10-2.jpg", "tour-10-3.jpg"],
+    "startDates": ["2021-11-10T09:00:00.000Z", "2022-02-15T09:00:00.000Z", "2022-10-12T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3101",
+    "name": "Lezzet Rotası",
+    "duration": 4,
+    "maxGroupSize": 16,
+    "difficulty": "kolay",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a201e2f8fb814b56fa186"],
+    "price": 799,
+    "summary": "Gaziantep’ten Şanlıurfa’ya uzanan güçlü gastronomi ve kültür deneyimi",
+    "description": "Yöresel lezzetler, tarihî çarşılar ve müze duraklarıyla dolu bir rota. Tadım noktaları planlı, tempo konforlu; amaç gün sonunda ‘iyi ki geldik’ dedirtmek.\nProgram; sokak lezzetleri, yerel üreticiler ve kültürel duraklarla bütünleşik şekilde tasarlanmıştır.",
+    "imageCover": "tour-10-cover.jpg",
+    "locations": [
+      {
+        "description": "Gaziantep Bakırcılar Çarşısı ve Çevresi",
+        "type": "Point",
+        "coordinates": [37.3799, 37.0656],
+        "day": 1
+      },
+      {
+        "description": "Zeugma Mozaik Müzesi",
+        "type": "Point",
+        "coordinates": [37.3609, 37.0568],
+        "day": 2
+      },
+      {
+        "description": "Halfeti Sahil ve Tekne İskelesi",
+        "type": "Point",
+        "coordinates": [37.8689, 37.2459],
+        "day": 3
+      },
+      {
+        "description": "Göbeklitepe Ziyaret Alanı",
+        "type": "Point",
+        "coordinates": [38.9224, 37.2231],
+        "day": 4
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Artvin, Türkiye",
+      "type": "Point",
+      "coordinates": [41.8183, 41.1828],
+      "address": "Merkez/Artvin, Türkiye"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 12,
+    "images": ["tour-11-1.jpg", "tour-11-2.jpg", "tour-11-3.jpg"],
+    "startDates": ["2021-06-05T09:00:00.000Z", "2022-06-11T09:00:00.000Z", "2023-06-10T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3102",
+    "name": "Yayla ve Şelale Kaşifi",
+    "duration": 6,
+    "maxGroupSize": 14,
+    "difficulty": "orta",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a1f292f8fb814b56fa184"],
+    "price": 1099,
+    "summary": "Artvin’in yaylaları, şelaleleri ve vadilerinde doğa odaklı keşif",
+    "description": "Gür yeşil, serin hava ve bol su sesi… Bu rota; yayla yürüyüşleri, fotoğraf molaları ve yerel dokunuşlarla dengeli bir doğa deneyimi sunar.\nYürüyüşler orta tempodadır; hedef ‘zorlamak’ değil, doğayla uyumlu bir akış yakalamaktır.",
+    "imageCover": "tour-11-cover.jpg",
+    "locations": [
+      {
+        "description": "Hatila Vadisi Milli Parkı Seyir Noktası",
+        "type": "Point",
+        "coordinates": [41.7896, 41.1762],
+        "day": 1
+      },
+      {
+        "description": "Borçka Karagöl",
+        "type": "Point",
+        "coordinates": [41.657, 41.3884],
+        "day": 2
+      },
+      {
+        "description": "Macahel (Camili) Biyosfer Rezervi",
+        "type": "Point",
+        "coordinates": [41.5076, 41.4697],
+        "day": 4
+      },
+      {
+        "description": "Şavşat Karagöl-Sahara Milli Parkı Bölgesi",
+        "type": "Point",
+        "coordinates": [42.3121, 41.3087],
+        "day": 6
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Mardin, Türkiye",
+      "type": "Point",
+      "coordinates": [40.7377, 37.3129],
+      "address": "Artuklu/Mardin, Türkiye"
+    },
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 21,
+    "images": ["tour-12-1.jpg", "tour-12-2.jpg", "tour-12-3.jpg"],
+    "startDates": ["2021-04-08T09:00:00.000Z", "2022-04-14T09:00:00.000Z", "2023-04-13T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3103",
+    "name": "Mezopotamya Kültür Yolu",
+    "duration": 5,
+    "maxGroupSize": 20,
+    "difficulty": "kolay",
+    "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a23412f8fb814b56fa18c"],
+    "price": 999,
+    "summary": "Mardin’den Midyat’a uzanan taş işçiligi, tarih ve çok katmanlı kültür rotası",
+    "description": "Tarihî sokaklar, manastırlar, çarşılar ve seyir teraslarıyla ‘yavaş gezme’ konseptinde kurgulanmış bir tur. Fotoğraf, kültür ve yerel hikâyeler ana omurgayı oluşturur.\nDuraklar arası geçişler planlıdır; katılımcı deneyimi konfor öncelikli şekilde yönetilir.",
+    "imageCover": "tour-12-cover.jpg",
+    "locations": [
+      {
+        "description": "Mardin Eski Şehir (Çarşı ve Sokaklar)",
+        "type": "Point",
+        "coordinates": [40.7371, 37.3123],
+        "day": 1
+      },
+      {
+        "description": "Deyrulzafaran Manastırı",
+        "type": "Point",
+        "coordinates": [40.708, 37.3441],
+        "day": 2
+      },
+      {
+        "description": "Dara Antik Kenti",
+        "type": "Point",
+        "coordinates": [40.6228, 37.1796],
+        "day": 3
+      },
+      {
+        "description": "Midyat Konuk Evi ve Eski Midyat Sokakları",
+        "type": "Point",
+        "coordinates": [41.3677, 37.4167],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Rize, Türkiye",
+      "type": "Point",
+      "coordinates": [40.5219, 41.0201],
+      "address": "Merkez/Rize, Türkiye"
+    },
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 10,
+    "images": ["tour-13-1.jpg", "tour-13-2.jpg", "tour-13-3.jpg"],
+    "startDates": ["2021-09-18T09:00:00.000Z", "2022-09-17T09:00:00.000Z", "2023-09-16T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3104",
+    "name": "Kaçkar Zirve Denemesi",
+    "duration": 7,
+    "maxGroupSize": 10,
+    "difficulty": "çok zor",
+    "guides": ["5c8a21d02f8fb814b56fa189", "5c8a1f4e2f8fb814b56fa185"],
+    "price": 1899,
+    "summary": "Kaçkarlar’da yüksek irtifa, kamp düzeni ve zorlu parkurlarla gerçek bir meydan okuma",
+    "description": "Bu tur yüksek irtifa ve değişken hava koşulları nedeniyle ciddi fiziksel dayanıklılık gerektirir. Kamp düzeni, ekipman kontrolü ve güvenlik brifingleri operasyonel akışın temelidir.\nRota; kondisyonu güçlü katılımcılar için, risk yönetimi gözetilerek kademeli şekilde ilerletilir.",
+    "imageCover": "tour-13-cover.jpg",
+    "locations": [
+      {
+        "description": "Ayder Yaylası (Hazırlık ve Uyum Süreci)",
+        "type": "Point",
+        "coordinates": [40.9473, 40.9547],
+        "day": 1
+      },
+      {
+        "description": "Pokut Yaylası",
+        "type": "Point",
+        "coordinates": [40.9008, 40.9143],
+        "day": 2
+      },
+      {
+        "description": "Kaçkar Dağları Ana Kamp Bölgesi",
+        "type": "Point",
+        "coordinates": [41.2487, 40.8616],
+        "day": 4
+      },
+      {
+        "description": "Zirve Etabı (Hedef Bölge)",
+        "type": "Point",
+        "coordinates": [41.1985, 40.8426],
+        "day": 6
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Çanakkale, Türkiye",
+      "type": "Point",
+      "coordinates": [26.4142, 40.1553],
+      "address": "Merkez/Çanakkale, Türkiye"
+    },
+    "ratingsAverage": 4.5,
+    "ratingsQuantity": 14,
+    "images": ["tour-14-1.jpg", "tour-14-2.jpg", "tour-14-3.jpg"],
+    "startDates": ["2021-05-21T09:00:00.000Z", "2022-05-20T09:00:00.000Z", "2023-05-19T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3105",
+    "name": "Tarih ve Ada Rüzgârı",
+    "duration": 5,
+    "maxGroupSize": 18,
+    "difficulty": "orta",
+    "guides": ["5c8a23412f8fb814b56fa18c", "5c8a201e2f8fb814b56fa186"],
+    "price": 1199,
+    "summary": "Gelibolu Tarihi Alanı’ndan Bozcaada’ya uzanan tarih, doğa ve deniz havası",
+    "description": "Tarihî duraklar, şehitlikler ve müzelerle başlayan rota; ada atmosferi ve sahil yürüyüşleriyle ferah bir deneyime dönüşür.\nGeçişler lojistik açıdan planlıdır; rehber anlatımı ve serbest zaman dengesi özellikle gözetilir.",
+    "imageCover": "tour-14-cover.jpg",
+    "locations": [
+      {
+        "description": "Gelibolu Yarımadası Tarihi Alanı (Şehitlikler Bölgesi)",
+        "type": "Point",
+        "coordinates": [26.2433, 40.2059],
+        "day": 1
+      },
+      {
+        "description": "Çanakkale Merkez (Kordon ve Müze Bölgesi)",
+        "type": "Point",
+        "coordinates": [26.4086, 40.1559],
+        "day": 2
+      },
+      {
+        "description": "Bozcaada Merkez ve Sahil Yürüyüş Rotası",
+        "type": "Point",
+        "coordinates": [26.0699, 39.8336],
+        "day": 4
+      },
+      {
+        "description": "Bozcaada Rüzgâr Gülü Tepesi Seyir Noktası",
+        "type": "Point",
+        "coordinates": [26.0612, 39.8194],
+        "day": 5
+      }
+    ]
+  },
+  {
+    "startLocation": {
+      "description": "Konya, Türkiye",
+      "type": "Point",
+      "coordinates": [32.4821, 37.8746],
+      "address": "Selçuklu/Konya, Türkiye"
+    },
+    "ratingsAverage": 4.8,
+    "ratingsQuantity": 11,
+    "images": ["tour-15-1.jpg", "tour-15-2.jpg", "tour-15-3.jpg"],
+    "startDates": ["2021-10-02T09:00:00.000Z", "2022-10-01T09:00:00.000Z", "2023-09-30T09:00:00.000Z"],
+    "_id": "5c88fa8cf4afda39709c3106",
+    "name": "Bozkır ve Göl Kaşifi",
+    "duration": 6,
+    "maxGroupSize": 15,
+    "difficulty": "orta",
+    "guides": ["5c8a21f22f8fb814b56fa18a", "5c8a1f292f8fb814b56fa184"],
+    "price": 1149,
+    "summary": "Konya bozkırından Beyşehir’e, göl manzaralarına ve sakin rotalara uzanan keşif",
+    "description": "Bozkırın dinginliği, göl kıyısı yürüyüşleri ve doğal seyir noktaları bir arada. Program; ‘sakin ama dolu’ bir ritim hedefler.\nDoğa yürüyüşleri orta seviyedir; katılımcı konforu ve rota sürdürülebilirliği öncelikli şekilde ele alınır.",
+    "imageCover": "tour-15-cover.jpg",
+    "locations": [
+      {
+        "description": "Mevlana Meydanı ve Çevresi (Başlangıç Buluşması)",
+        "type": "Point",
+        "coordinates": [32.5042, 37.8714],
+        "day": 1
+      },
+      {
+        "description": "Sille Köyü",
+        "type": "Point",
+        "coordinates": [32.4076, 37.9118],
+        "day": 2
+      },
+      {
+        "description": "Beyşehir Gölü Milli Parkı Kıyı Rotası",
+        "type": "Point",
+        "coordinates": [31.7241, 37.6769],
+        "day": 4
+      },
+      {
+        "description": "Eğirdir Gölü Seyir Noktası",
+        "type": "Point",
+        "coordinates": [30.8556, 37.8749],
+        "day": 6
+      }
+    ]
+  }
+]

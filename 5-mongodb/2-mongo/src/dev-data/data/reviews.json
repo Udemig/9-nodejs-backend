@@ -1,0 +1,422 @@
+[
+  {
+    "_id": "5c8a34ed14eb5c17645c9108",
+    "review": "Rota genel olarak keyifliydi; denge iyi kurulmuş. Yine de bazı duraklarda süre yönetimi daha iyi olabilirdi.",
+    "rating": 4,
+    "user": "5c8a1dfa2f8fb814b56fa181",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a355b14eb5c17645c9109",
+    "review": "Ulaşım ve bilgilendirme yeterliydi ama programa göre tempo biraz hızlıydı. Daha fazla mola beklerdim.",
+    "rating": 3,
+    "user": "5c8a1dfa2f8fb814b56fa181",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a359914eb5c17645c910a",
+    "review": "Kültürel anlatım çok doyurucuydu, rehberin hikâyeleştirmesi turu zenginleştirdi. Tekrar gelirim.",
+    "rating": 5,
+    "user": "5c8a1dfa2f8fb814b56fa181",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a35b614eb5c17645c910b",
+    "review": "Lezzet durakları başarılıydı; ancak bazı noktalarda kalabalık nedeniyle servis yavaştı.",
+    "rating": 4,
+    "user": "5c8a1dfa2f8fb814b56fa181",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a364c14eb5c17645c910c",
+    "review": "Genel deneyim tatmin ediciydi; fiyat/performans dengesi iyi. Program akışı netti.",
+    "rating": 4,
+    "user": "5c8a1e1a2f8fb814b56fa182",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a368c14eb5c17645c910d",
+    "review": "Kısa ama dolu bir turdu. Organizasyon disiplinliydi; rehber yönlendirmeleri yerindeydi.",
+    "rating": 5,
+    "user": "5c8a1e1a2f8fb814b56fa182",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a36a014eb5c17645c910e",
+    "review": "Gece gözlemi bölümü harikaydı. Yıldızları izlerken verilen kısa bilgilendirme çok işime yaradı.",
+    "rating": 5,
+    "user": "5c8a1e1a2f8fb814b56fa182",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a36b714eb5c17645c910f",
+    "review": "Doğa güzeldi ama beklentim daha yüksek çıktı. Bazı günler tekrar eden parkurlar vardı.",
+    "rating": 3,
+    "user": "5c8a1e1a2f8fb814b56fa182",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a379a14eb5c17645c9110",
+    "review": "Yemekler efsaneydi, yerel üreticilerle buluşturulması çok profesyoneldi. Kesinlikle öneririm.",
+    "rating": 5,
+    "user": "5c8a24402f8fb814b56fa190",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a37b114eb5c17645c9111",
+    "review": "Zorluk seviyesi iyi ayarlanmıştı. Yine de ekipman bilgilendirmesi daha detaylı olabilirdi.",
+    "rating": 4,
+    "user": "5c8a24402f8fb814b56fa190",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a37cb14eb5c17645c9112",
+    "review": "Tarih anlatımı çok güçlüydü; duraklar arası geçişler de sorunsuzdu. Zamanlama mükemmeldi.",
+    "rating": 5,
+    "user": "5c8a24402f8fb814b56fa190",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a37dd14eb5c17645c9113",
+    "review": "Gün planı fena değildi ama otel/konaklama tarafında beklentimi karşılamadı.",
+    "rating": 2,
+    "user": "5c8a24402f8fb814b56fa190",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a37f114eb5c17645c9114",
+    "review": "Rehber çok ilgiliydi, her soruya sabırla yanıt verdi. Akış net, ekip koordinasyonu güçlüydü.",
+    "rating": 5,
+    "user": "5c8a24402f8fb814b56fa190",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a381714eb5c17645c9115",
+    "review": "Genel olarak memnun kaldım. Ulaşım ve saat yönetimi iyi, içerik doluydu.",
+    "rating": 4,
+    "user": "5c8a1ec62f8fb814b56fa183",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a382d14eb5c17645c9116",
+    "review": "Rota çok keyifliydi; özellikle fotoğraf noktaları seçimi harikaydı. Program beklentimin üstündeydi.",
+    "rating": 5,
+    "user": "5c8a1ec62f8fb814b56fa183",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a384114eb5c17645c9117",
+    "review": "Operasyonel olarak başarılıydı. Ancak bazı aktivitelerde sıra bekleme süresi uzadı.",
+    "rating": 4,
+    "user": "5c8a1ec62f8fb814b56fa183",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a385614eb5c17645c9118",
+    "review": "Kültür kısmı güzel ama serbest zaman daha fazla olmalıydı. Çok sıkı bir takvim vardı.",
+    "rating": 3,
+    "user": "5c8a1ec62f8fb814b56fa183",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a387214eb5c17645c9119",
+    "review": "Beklentimi karşıladı; lezzet durakları doğru seçilmiş. Yine de bazı noktalarda yönlendirme tabelası eksikti.",
+    "rating": 4,
+    "user": "5c8a1ec62f8fb814b56fa183",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a38ac14eb5c17645c911a",
+    "review": "Genel deneyim iyi; rehber iletişimi kuvvetli. Bir iki durakta daha fazla bilgi beklerdim.",
+    "rating": 4,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a38c714eb5c17645c911b",
+    "review": "Gökyüzü gözlemi kısmı müthişti. Atmosfer, sessizlik ve anlatım birleşince çok etkileyiciydi.",
+    "rating": 5,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a38da14eb5c17645c911c",
+    "review": "Tempo beklediğimden daha yorucuydu. Programda esneklik payı çok azdı.",
+    "rating": 2,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a38ed14eb5c17645c911d",
+    "review": "Kültürel duraklar güzel seçilmişti. Ancak bazı bölümlerde kalabalık yönetimi zayıftı.",
+    "rating": 3,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a390d14eb5c17645c911e",
+    "review": "Rehberlik kalitesi yüksekti, rota akışı da sorunsuzdu. Tekrar katılmayı düşünürüm.",
+    "rating": 5,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a391f14eb5c17645c911f",
+    "review": "İstanbul çıkışlı plan güzel ama bazı günler ulaşım süreleri çok uzundu. Gün daha verimli kullanılabilirdi.",
+    "rating": 3,
+    "user": "5c8a211f2f8fb814b56fa188",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a395b14eb5c17645c9120",
+    "review": "Beklentimin üzerinde çıktı. Anlatım akıcı, duraklar dolu doluydu.",
+    "rating": 5,
+    "user": "5c8a20d32f8fb814b56fa187",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a399014eb5c17645c9121",
+    "review": "Fena değildi ama fiyatına göre biraz daha fazla içerik beklerdim. Bazı noktalar yüzeysel kaldı.",
+    "rating": 3,
+    "user": "5c8a20d32f8fb814b56fa187",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a39a214eb5c17645c9122",
+    "review": "Gece kısmı çok iyi planlanmıştı. Sessiz alan seçimi ve rehberin yaklaşımı harikaydı.",
+    "rating": 5,
+    "user": "5c8a20d32f8fb814b56fa187",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a39b614eb5c17645c9123",
+    "review": "Tur genel olarak ortalamaydı. Bazı duraklar çok kısa geçti, daha çok zaman ayrılmalıydı.",
+    "rating": 3,
+    "user": "5c8a20d32f8fb814b56fa187",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a3a7014eb5c17645c9124",
+    "review": "Lezzet rotası için gayet planlıydı. Rehber önerileri sayesinde doğru yerlerde yedik.",
+    "rating": 4,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3a8d14eb5c17645c9125",
+    "review": "Doğa ve manzara muhteşemdi. Rota seçimi ve güvenlik yaklaşımı profesyoneldi.",
+    "rating": 5,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a3a9914eb5c17645c9126",
+    "review": "Zorluk seviyesi yüksek denmişti ama beklentim daha farklıydı. Yine de ekip destekleyiciydi.",
+    "rating": 4,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3aaa14eb5c17645c9127",
+    "review": "Tarih kısmı güçlüydü; ancak bazı saatlerde program çok sıkıştı. Daha rahat akış iyi olurdu.",
+    "rating": 4,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3abc14eb5c17645c9128",
+    "review": "Genel deneyim iyi ama bazı aktiviteler beklentimi tam karşılamadı. Yine de denemeye değer.",
+    "rating": 3,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a3acf14eb5c17645c9129",
+    "review": "Gözlem noktası seçimleri çok isabetliydi. Rehberin yönlendirmesiyle gerçekten verimli bir geceydi.",
+    "rating": 5,
+    "user": "5c8a23c82f8fb814b56fa18d",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3b1e14eb5c17645c912a",
+    "review": "Yemekler güzel ama bazı mekanlarda hijyen beklentim daha yüksekti. Bu kısım iyileştirilmeli.",
+    "rating": 2,
+    "user": "5c8a23de2f8fb814b56fa18e",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3b3214eb5c17645c912b",
+    "review": "Tarih ve ada havası birleşince çok keyifli oldu. Serbest zaman dengesi de yerindeydi.",
+    "rating": 5,
+    "user": "5c8a23de2f8fb814b56fa18e",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3b4714eb5c17645c912c",
+    "review": "Beklentimin çok altında kaldı. Planlama zayıftı, gün içi bilgilendirme yetersizdi ve organizasyon dağınıktı.",
+    "rating": 1,
+    "user": "5c8a23de2f8fb814b56fa18e",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a3b6714eb5c17645c912e",
+    "review": "Genel akış iyi yönetildi. Kültürel anlatım doyurucuydu, duraklar arası geçiş sorunsuzdu.",
+    "rating": 5,
+    "user": "5c8a23de2f8fb814b56fa18e",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a3b7c14eb5c17645c912f",
+    "review": "Doğa bölümü güzeldi; fakat bazı günler gereksiz erken çıkıldı. Program biraz daha optimize edilebilir.",
+    "rating": 3,
+    "user": "5c8a23de2f8fb814b56fa18e",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a3b9f14eb5c17645c9130",
+    "review": "Zorlu ama tatmin edici bir deneyimdi. Ekipman kontrolü ve güvenlik brifingi çok yerindeydi.",
+    "rating": 5,
+    "user": "5c8a24282f8fb814b56fa18f",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3bc414eb5c17645c9131",
+    "review": "Tarih alanı ziyaretleri etkileyiciydi. Rehberin anlatımı net ve akıcıydı.",
+    "rating": 5,
+    "user": "5c8a24282f8fb814b56fa18f",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3bdc14eb5c17645c9132",
+    "review": "Rota güzel ama tempo bana göre yüksekti. Birkaç durakta daha uzun mola iyi olurdu.",
+    "rating": 3,
+    "user": "5c8a24282f8fb814b56fa18f",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a3bf514eb5c17645c9133",
+    "review": "Ada kısmı çok keyifliydi. Ulaşım koordinasyonu başarılıydı ve genel atmosfer rahattı.",
+    "rating": 4,
+    "user": "5c8a24282f8fb814b56fa18f",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3c2514eb5c17645c9134",
+    "review": "Lezzet duraklarının kalitesi yüksekti. Planlama güçlü, ekip iletişimi çok iyiydi.",
+    "rating": 5,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3c3b14eb5c17645c9135",
+    "review": "Zorlu kısım fena değildi; ancak bazı etaplar için ön bilgilendirme daha detaylı olmalıydı.",
+    "rating": 4,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3c5314eb5c17645c9136",
+    "review": "Tarih ve ada rotası çok dolu doluydu. Gün sonunda yorgun ama mutlu ayrıldık.",
+    "rating": 5,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3c6814eb5c17645c9137",
+    "review": "Kültür rotası güzel ama bazı duraklarda anlatım çok kısa kaldı. Daha derin içerik beklerdim.",
+    "rating": 3,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a3c7814eb5c17645c9138",
+    "review": "Genel olarak idare eder. Konaklama ve yemek tarafında standartlar biraz dalgalıydı.",
+    "rating": 2,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a3c9014eb5c17645c9139",
+    "review": "Gece gözlemi beklediğimden çok daha iyi çıktı. Alan seçimi ve ekip koordinasyonu başarılıydı.",
+    "rating": 5,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3ca314eb5c17645c913a",
+    "review": "Lezzet turunda bazı noktalarda sıra bekledik ama genel kalite iyiydi. Yine de memnun kaldım.",
+    "rating": 4,
+    "user": "5c8a245f2f8fb814b56fa191",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3cdc14eb5c17645c913b",
+    "review": "Doğa rotası gerçekten nefes kesiciydi. Rehberin yönlendirmesi sayesinde tempoyu iyi yönettik.",
+    "rating": 5,
+    "user": "5c8a24822f8fb814b56fa192",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a3cf414eb5c17645c913c",
+    "review": "Lezzet rotası tam bir deneyimdi; önerilen mekanlar nokta atışıydı. Kurgu çok profesyoneldi.",
+    "rating": 5,
+    "user": "5c8a24822f8fb814b56fa192",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3d1e14eb5c17645c913d",
+    "review": "Tarih alanları etkileyiciydi ama bazı saatlerde otobüs/transfer beklemesi oldu.",
+    "rating": 4,
+    "user": "5c8a24822f8fb814b56fa192",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3d3a14eb5c17645c913e",
+    "review": "Zorluk seviyesi açıklanandan daha ağır geldi. Grup temposu bana uymadı, daha küçük gruplar iyi olur.",
+    "rating": 2,
+    "user": "5c8a24822f8fb814b56fa192",
+    "tour": "5c88fa8cf4afda39709c3104"
+  },
+  {
+    "_id": "5c8a3d5314eb5c17645c913f",
+    "review": "Kültür rotası çok tatlıydı; fotoğraf ve serbest zaman dengesi yerindeydi. Keyif aldık.",
+    "rating": 5,
+    "user": "5c8a24822f8fb814b56fa192",
+    "tour": "5c88fa8cf4afda39709c3103"
+  },
+  {
+    "_id": "5c8a3d8614eb5c17645c9140",
+    "review": "Ada kısmı çok güzel; ama ilk gün buluşma ve check-in süreçleri biraz karışıktı.",
+    "rating": 3,
+    "user": "5c8a24a02f8fb814b56fa193",
+    "tour": "5c88fa8cf4afda39709c3105"
+  },
+  {
+    "_id": "5c8a3d9b14eb5c17645c9141",
+    "review": "Lezzet odaklı bir tur için ortalama kaldı. Bazı tatlar çok iyi, bazıları beklentimin altındaydı.",
+    "rating": 2,
+    "user": "5c8a24a02f8fb814b56fa193",
+    "tour": "5c88fa8cf4afda39709c3101"
+  },
+  {
+    "_id": "5c8a3de514eb5c17645c9143",
+    "review": "Planlama zayıftı; saatler net değildi ve ekip bilgilendirmesi yetersiz kaldı. Daha iyi yönetim beklerdim.",
+    "rating": 1,
+    "user": "5c8a24a02f8fb814b56fa193",
+    "tour": "5c88fa8cf4afda39709c3106"
+  },
+  {
+    "_id": "5c8a3e0714eb5c17645c9144",
+    "review": "Beklentimi karşılamadı. Bazı duraklar iptal oldu, alternatif plan sunulması gecikti.",
+    "rating": 1,
+    "user": "5c8a24a02f8fb814b56fa193",
+    "tour": "5c88fa8cf4afda39709c3102"
+  },
+  {
+    "_id": "5c8a3e63e12c44188b4dbc5b",
+    "review": "Aktiviteler eğlenceliydi; ancak lojistikte küçük aksaklıklar yaşandı. Genel olarak orta seviyede bir deneyim.",
+    "rating": 3,
+    "user": "5c8a24a02f8fb814b56fa193",
+    "tour": "5c88fa8cf4afda39709c3104"
+  }
+]
