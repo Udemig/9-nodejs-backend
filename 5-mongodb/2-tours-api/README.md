@@ -73,3 +73,19 @@
 
 - Yetkilendirme
 - Kullanıcnın oturum durumu veya rolüne göre hangi endpointlere erişebileceğini belirleme süreci
+
+# Global Hata Yönetimi
+
+- Uygulumanın herhangi bir yerinde oluşan hataların tek bir merkezden yakalanıp, standart ve kontrollü şekilde client'a dönülmesini sağlar.
+
+-**Neden Kullanılır**
+
+- Hata formatını tek tip yapar
+- try/catch tekrarını azaltır
+- 500 gibi sunucu hatalarını kontrol atına alır
+
+# Şifremi Unuttum
+
+- Kullanıcı şifresini unuttuğu mail adresini yazar
+- Biz mail adresinin kullanıcıya ait olduğunu doğrulamak için bir e-posta göndeririz
+- Bu e-posta sayesinde mail'in kullanıcıya ait olduğunu doğrulayabilir ve şifre değiştirme sürecine geçebiliriz

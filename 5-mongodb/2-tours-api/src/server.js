@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import tourRoutes from "./routes/tourRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 import { NotFound } from "./utils/error.js";
 import errorHandler from "./middlewares/errorHandler.js";
@@ -26,6 +27,7 @@ mongoose
 // route'ları projeye tanıt
 app.use("/api/tours", tourRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
 
 // tanımlanmayan route
 app.use((req, res, next) => next(new NotFound()));

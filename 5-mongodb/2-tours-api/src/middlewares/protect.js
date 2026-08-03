@@ -14,7 +14,6 @@ export const protect = async (req, res, next) => {
   const token = req.cookies.jwt;
 
   // 2) token gelmediyse hata fırlat
-
   if (!token) throw new Unauthorized();
 
   // 3) token'ın geçerliliğini doğrula (zaman aşımına uğradımı? | imza doğru mu?)
@@ -39,7 +38,17 @@ export const protect = async (req, res, next) => {
   // 4.2) hesap dondurulduysa hata fırlat
   if (!activeUser.active) throw new Unauthorized("Kullanıcı hesabı bulunamadı");
 
-  // 5) protect'den sonra çalışacak fonksiyonlarda kullanıcı verisine erişebilmek için req nesnesine user'ı ekle
+  // 5) kullanıcıya tokenı verdikten sonra şifresini değiştirdi mi?
+  if (activeUser?.passwordChangedAt) {
+    const passwordChangedSeconds = activeUser.passwordChangedAt.getTime() / 1000;
+    const tokenCreatedSeconds = decoded.iat;
+
+    if (passwordChangedSeconds > tokenCreatedSeconds) {
+      throw new Forbidden("Yakın zamanda şifrenizi değiştirdiniz. Lütfen tekrar giriş yapın");
+    }
+  }
+
+  // 6) protect'den sonra çalışacak fonksiyonlarda kullanıcı verisine erişebilmek için req nesnesine user'ı ekle
   req.user = activeUser;
 
   // sonraki adıma geç
