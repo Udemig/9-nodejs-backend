@@ -10,9 +10,9 @@ dotenv.config();
 
 export const register = catchAsync(async (req, res) => {
   const newUser = await User.create({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
+    name: req.validated.body.name,
+    email: req.validated.body.email,
+    password: req.validated.body.password,
   });
 
   res.status(201).json({ message: "Hesabınız oluşturuldu", user: newUser });
@@ -44,6 +44,7 @@ export const login = catchAsync(async (req, res) => {
     expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
     httpOnly: true, // sadece http protokolüne sahip domainlerde seyahat eder
     secure: false, // sadece https
+    sameSite: "strict",
   });
 
   res.json({ message: "Giriş Yapıldı", user });

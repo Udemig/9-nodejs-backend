@@ -89,3 +89,58 @@
 - Kullanıcı şifresini unuttuğu mail adresini yazar
 - Biz mail adresinin kullanıcıya ait olduğunu doğrulamak için bir e-posta göndeririz
 - Bu e-posta sayesinde mail'in kullanıcıya ait olduğunu doğrulayabilir ve şifre değiştirme sürecine geçebiliriz
+
+# Data Modeling
+
+- Data modeling, bir uygulamada verilerin nasıl saklanacağını, birbirleriyle nasıl ilişkilendirileceğini nasıl erişileceğini tanımlama sürecidir. Bu süreç, projenin ihtiyaçlarını karşılama adına veritabanı tasarımını planlamak için kullanılır. Amaç, karmaşık veri setlerinin daha anlaşılabilir düzenli, erişilebilir bir şekilde oranize edilmesini sağlamaktır
+
+## Aşamalar
+
+1. Gereksinim Analizi
+
+- - Uygulamanın hangi verilerle çalışıcağı belirlenir
+- - Verilerin nasıl kullanılcağını ve hangi sorguların yapılacağı analiz edilir
+
+2. Varlıkların Tanımlanması
+
+- - Veritabnında temsil edilecek nesneler belirlenir (Ürünler,Siparişler,Kullanıcılar)
+- - Her nesnenin özellikleri belirlenir (ad,e-posta,şifre,yaş)
+
+3. İlişkilerin Tanımlanması
+
+- - Verilerin arasındaki ilişkiler belirlenir (örn: Sipariş nesnesinde kullanıcı verisi nasıl tutulacak)
+- - İlişki Türler
+- - Embed | Refferance
+- - One To One | One to Many | Many to Many
+
+4. Performans Optimizasyonu ve Indeksleme
+
+- Sık yapılan sorgularda indeksleme yapılır.
+- Veri modeli sorgu perfromansı arttıracak şekilde optimize edilir
+
+# Embed vs Referance
+
+1. Refferance | Normalization
+
+- Referans, belirli bir belgedeki verileri bir başka belgeye referans (id) kullanılarak ilişkilendirmeye yarar.
+- Yani iki belge arasında ilişki vardır ancak gerçek veri bir belgede saklanırken diğer belgede sadece gerçek verinin referansı mevcuttur.
+
+2. Embedding | Denormalization
+
+- Belirli bir belgenin içerisindeki verileri diğer belgelere doğrudan gömülü olarak tanımlamaya yarar
+
+## Hangi Yöntemi Tercih Etmeliyiz
+
+- Birlikte okunuyorsa embedd, ayrı büyüyorsa refferance
+
+- **Embedding Ne Zaman?**
+- Veri küçük
+- Sık birlikte kullanıluyorsa,
+- Nadiren güncelleniyorsa
+- Tek owner varsa
+
+- **Refferance Ne Zaman**
+- Veri çok büyüyorsa
+- Belge ayrı lazım oluyorsa
+- Sık güncelleniyorsa
+- Birden fazla yerde kullanıyorsa

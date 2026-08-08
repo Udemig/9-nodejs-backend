@@ -67,5 +67,6 @@ tourSchema.pre("find", function () {
 });
 
 // yukardaki şemayı kullanaraka mongoose model oluştur
-const Tour = mongoose.model("Tour", tourSchema);
+const 
+Tour = mongoose.model("Tour", tourSchema);
 export default Tour;

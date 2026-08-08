@@ -7,6 +7,8 @@ import userRoutes from "./routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 import { NotFound } from "./utils/error.js";
 import errorHandler from "./middlewares/errorHandler.js";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
 
 // env değişkenlerine erişmemizi sağlayacak fonksiyon
 dotenv.config();
@@ -14,8 +16,23 @@ dotenv.config();
 // express uygulaması oluştur
 const app = express();
 
+// rate limit
+const loginRateLimit = rateLimit({
+  windowMs: 5 * 60 * 1000,
+  max: 5,
+  message: "Kısa süre içerisinde çok fazla deneme yaptınız lütfen daha sonra tekrar deneyiniz",
+});
+const generalRateLimit = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 50,
+  message: "Kısa süre içerisinde çok fazla deneme yaptınız lütfen daha sonra tekrar deneyiniz",
+});
+
 // middleware
-app.use(express.json());
+app.use(helmet());
+app.use(generalRateLimit);
+app.use("/api/auth/", loginRateLimit);
+app.use(express.json({ limit: "100kb" }));
 app.use(cookieParser());
 
 // mongodb veritabanına bağlan

@@ -73,7 +73,7 @@ export const updateTour = catchAsync(async (req, res) => {
 
 export const deleteTour = catchAsync(async (req, res) => {
   // veritabanından id'si bilinen belgeyi kaldır
-  const tour = await Tour.findByIdAndDelete(req.params.id);
+  const tour = await Tour.findOneAndDelete(req.params.id);
 
   // tur bulunamadıysa
   if (!tour) throw new NotFound("Tur bulunamadı");
