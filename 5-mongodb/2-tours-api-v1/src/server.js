@@ -9,6 +9,7 @@ import { NotFound } from "./utils/error.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import rateLimit from "express-rate-limit";
 import helmet from "helmet";
+import reviewRoutes from "./routes/reviewRoutes.js";
 
 // env değişkenlerine erişmemizi sağlayacak fonksiyon
 dotenv.config();
@@ -45,6 +46,7 @@ mongoose
 app.use("/api/tours", tourRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/reviews", reviewRoutes);
 
 // tanımlanmayan route
 app.use((req, res, next) => next(new NotFound()));

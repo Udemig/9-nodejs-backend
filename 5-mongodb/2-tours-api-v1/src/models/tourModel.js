@@ -5,7 +5,7 @@
  * Bu sayede kolleksiyonda tutulan belgelerin daha tutarlı olması sağlanır
 */
 
-import mongoose from "mongoose";
+import mongoose, { mongo } from "mongoose";
 import validator from "validator";
 
 // schema: veritabanına kaydedilecek tur verisinin şartlarını tanımlamamızı sağlar
@@ -38,6 +38,25 @@ const tourSchema = new mongoose.Schema(
     images: { type: [String], required: true },
     startDates: { type: [Date], required: true },
     premium: { type: Boolean },
+    duration: { type: Number, required: true },
+    // embedding
+    startLocation: {
+      description: String,
+      type: { type: String, default: "Point", enum: ["Point"] },
+      coordinates: [Number],
+      address: String,
+    },
+    // embedding
+    locations: [
+      {
+        description: String,
+        type: { type: String, default: "Point", enum: ["Point"] },
+        coordinates: [Number],
+        day: Number,
+      },
+    ],
+    // refferance (parent)
+    guides: [{ type: mongoose.Schema.ObjectId, ref: "User" }],
   },
   { timestamps: true, versionKey: false, toJSON: { virtuals: true }, toObject: { virtuals: true } },
 );
@@ -67,6 +86,5 @@ tourSchema.pre("find", function () {
 });
 
 // yukardaki şemayı kullanaraka mongoose model oluştur
-const 
-Tour = mongoose.model("Tour", tourSchema);
+const Tour = mongoose.model("Tour", tourSchema);
 export default Tour;

@@ -3,87 +3,17 @@ import qs from "qs";
 import APIFeatures from "../utils/apiFeatures.js";
 import { NotFound, BadRequest } from "../utils/error.js";
 import catchAsync from "../utils/catchAsync.js";
+import * as factory from "../utils/handlerFactory.js";
 
-export const getAllTours = catchAsync(async (req, res) => {
-  // sorguyu oluştur
-  const features = new APIFeatures(Tour.find(), req.query, req.parsedQuery)
-    .sort()
-    .filter()
-    .pagination()
-    .select();
+export const getAllTours = factory.getAll(Tour);
 
-  // sorguyu çalıştır
-  const tours = await features.toursQuery;
+export const getOneTour = factory.getOne(Tour, [{ path: "guides", select: "name photo email" }]);
 
-  // client'a yanıt gönder
-  res.status(200).json({
-    message: "Turlar listesindi",
-    results: tours.length,
-    data: tours,
-  });
-});
+export const createTour = factory.createOne(Tour);
 
-export const getOneTour = catchAsync(async (req, res) => {
-  // istek ile birlikte gelen id parametresine eriş
-  const id = req.params.id;
+export const updateTour = factory.updateOne(Tour);
 
-  // veritabanından id'si bilinen turu al
-  const tour = await Tour.findById(id);
-
-  // tur bulunamadıysa
-  if (!tour) throw new NotFound("Tur bulunamadı");
-
-  // client'a yanıt gönder
-  res.status(200).json({
-    message: "Tur listelendi",
-    data: tour,
-  });
-});
-
-export const createTour = catchAsync(async (req, res) => {
-  // isteğin body kısmındaki veriye eriş
-  const body = req.body;
-
-  // yeni turu veritabanına kaydet
-  const newTour = await Tour.insertOne(body);
-
-  // client'a yanıt gönder
-  res.status(201).json({
-    message: "Tur sisteme eklendi",
-    data: newTour,
-  });
-});
-
-export const updateTour = catchAsync(async (req, res) => {
-  // veritabanında tur belgesini güncelle
-  const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
-    new: true,
-    runValidators: true,
-  });
-
-  // tur bulunamadıysa hata fırlat
-  if (!tour) throw new NotFound("Tur bulunamadı");
-
-  // client'a yanıt gönder
-  res.status(200).json({
-    message: "Tur güncellendi",
-    data: tour,
-  });
-});
-
-export const deleteTour = catchAsync(async (req, res) => {
-  // veritabanından id'si bilinen belgeyi kaldır
-  const tour = await Tour.findOneAndDelete(req.params.id);
-
-  // tur bulunamadıysa
-  if (!tour) throw new NotFound("Tur bulunamadı");
-
-  // client'a yanıt gönder
-  res.status(200).json({
-    message: "Tur kaldırıldı",
-    data: tour,
-  });
-});
+export const deleteTour = factory.deleteOne(Tour);
 
 // en iyi turları almamızı sağlayacak parametreleri ayarlayan middleware
 export const aliasTopTours = async (req, res, next) => {
@@ -171,4 +101,67 @@ export const getMonthlyPlan = catchAsync(async (req, res) => {
   ]);
 
   return res.json({ message: "Yıllık plan", stats });
+});
+
+// belirli bir alandaki turları filtrele
+export const getToursWithin = catchAsync(async (req, res) => {
+  // parametrelere eriş
+  const { unit, distance, latlng } = req.params;
+
+  // enlem/boylam değerini dizi formatına çevir
+  const [lat, lng] = latlng.split(",");
+
+  // enlem/boylam verisi sağlnamazsa hata fırlat
+  if (!lat || !lng) throw BadRequest("Lütfen merkez noktasını tanımlayın");
+
+  // daire yarıçapını radyan birimine çevir
+  const radius = unit == "mi" ? distance / 3963.2 : distance / 6378.1;
+
+  // belirlenen dairesl alandaki turları al
+  const tours = await Tour.find({
+    startLocation: {
+      $geoWithin: {
+        $centerSphere: [[lat, lng], radius],
+      },
+    },
+  });
+
+  res.json({
+    message: "Sınırlar içerisindeki turlar algılandı",
+    results: tours.length,
+    data: tours,
+  });
+});
+
+export const getDistances = catchAsync(async (req, res) => {
+  // url'den parametreleri al
+  const { latlng, unit } = req.params;
+
+  // enlem/boylam'ı dizi formatına çevir
+  const [lat, lng] = latlng.split(",");
+
+  // turların mekez noktasından uzaklıklarını hesapla
+  const tours = await Tour.aggregate([
+    // 1) uzaklığı hesapla
+    {
+      $geoNear: {
+        near: { type: "Point", coordinates: [+lat, +lng] },
+        distanceField: "distance",
+        //todo km veya mile çevir
+      },
+    },
+    // 2) istediğimiz alanları seç
+    {
+      $project: {
+        name: 1,
+        distance: 2,
+      },
+    },
+  ]);
+
+  // client'a cevap göder
+  res.json({
+    message: "Uzaklıklar hesaplandı",
+    data: tours,
+  });
 });

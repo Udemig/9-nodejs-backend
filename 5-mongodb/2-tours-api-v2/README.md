@@ -144,3 +144,86 @@
 - Belge ayrı lazım oluyorsa
 - Sık güncelleniyorsa
 - Birden fazla yerde kullanıyorsa
+
+# İlişki Türleri
+
+- One to One (1:1): Bir kolleksiyondaki her kayıt diğer kolleksiyondaki tek bir kayıt ile ilişkilendirilir
+- One to Many (1:Many): Bir kolleksiyondaki her kayıt diğer kolleksiyondaki birden çok kayıt ile ilişkilendirilir
+- Many to Many (Many:Many): Bir kolleksiyondaki birden çok kayıt diğer kolleksiyondaki birden çok kayıt ile ilişkilendirilir
+
+## Parent vs Child Referance
+
+- Bu kavram, referanslı modelleme yaparken ID'nin hangi tarafta tutulacağına karar verme meselesidir
+
+## Parent Refferance
+
+- Child sayısı çoksa
+- Pagination gerekiyor
+- Child bağımsız bir belge ise
+- Performs kritikse
+
+```js
+Order({
+  totalPrice,
+  createdAt,
+  userId,
+});
+```
+
+## Child Refferance
+
+- Child sayısı azsa
+- Liste sabit / küçükse
+- Hızlı erişişm gerekiyor
+
+```js
+User({
+  name,
+  email,
+  orderId,
+});
+```
+
+## Populate
+
+- `populate()`, bir mongodb belgesini sorguladığımızda, o belgenin içerisinde referans olarak verilen başka bir kolleksiyondaki belgeyi/belgeleri otomatik olarak doldurmamızı sağlayan yöntemdir
+- Referans olarak tanımladığımız id'ler için arkağlanda bir sorgu daha yapıp ardından iki sorgunun verilerini birleştirir.
+- SQL'deki JOIN yönteminin benzeridir
+
+# Index
+
+- Veritabanında arama, sorgu, sıralama, işlemlerini hızlandırmak için kullanılan bir tekniktir.
+- Normal şartlarda filtrelme kullanılarak yapılan sorgularda mongodb bütün belgeleri inceleyip filtrelemeye uygun olanları döndürür
+
+- **Index Yoksa**
+- 1 milyon kayıt varsa hepsini kontrol eder koşula uyanları (2500) getirir.
+
+- **Index Varsa**
+- Veritabanında veriler sıralı şekilde saklandığı için sadece 2500 kaydı kontrol eder ve onları getirir
+
+- **Avantaj**
+- Direkt ilgili kayıtları bul
+- Çok hızlı
+
+- **Dezavantaj**
+- Her index diskte alan kaplar
+- Insert/Update/Delete sorguları daha yavaş gerçekleşir
+
+- **Sonuç**
+- Bütün alanlara index uygulamak bizi zarara sokucağından kullanıcılar tarafından en sık yapılan sorgularda uygulamak en mantıklı yöntemdir
+
+## Index Türleri
+
+- **Single Field Index**
+- Tek bir alan için çalışır
+- `tourSchema.index({price: 1})` artan
+- `tourSchema.index({price: -1})` azalan
+
+- **Compound Index**
+- Birden fazla alan için çalışır
+- Sıra önemli
+- `tourSchema.index({price: -1, ratingsAverage:-1})`
+
+- **Unique Index**
+- Aynı değerin tekrar edilmesini engeller
+- `email:{type:String,unique:true}`
