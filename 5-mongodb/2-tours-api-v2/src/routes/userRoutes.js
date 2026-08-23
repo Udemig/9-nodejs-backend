@@ -10,10 +10,15 @@ import {
   updateMe,
   updateUser,
 } from "../controllers/userController.js";
+import { upload, resize } from "../utils/upload.js";
 
 const router = express.Router();
 
-router.route("/me").get(protect, profile).patch(protect, updateMe).delete(protect, deleteMe);
+router
+  .route("/me")
+  .get(protect, profile)
+  .patch(protect, upload.single("photo"), resize, updateMe)
+  .delete(protect, deleteMe);
 
 router.use(protect, authorizeRoles("admin")); // bu satırdan soranki bütün route'lara sadece admin istek atabilir
 

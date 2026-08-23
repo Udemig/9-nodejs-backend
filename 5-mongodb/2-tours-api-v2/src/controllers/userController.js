@@ -16,9 +16,12 @@ export const deleteMe = catchAsync(async (req, res) => {
 
 export const updateMe = catchAsync(async (req, res) => {
   // 1) şifreyi güncellemeye çalışılırsa hata ver
-  if (req.body.password) throw new BadRequest("Şifreyi bu yöntemle güncelleyemezsiniz");
+  if (req?.body?.password) throw new BadRequest("Şifreyi bu yöntemle güncelleyemezsiniz");
 
-  // 2) kullanıcı bilgilerini güncelle
+  // 2) fotoğraf verisi varsa kullanıcı belgesine ekle
+  if (req?.file) req.body.photo = req.file;
+
+  // 3) kullanıcı bilgilerini güncelle
   const updatedUser = await User.findByIdAndUpdate(req.user._id, req.body, { new: true });
 
   res.status(200).json({ message: "Hesap bilgileri güncellendi", data: updatedUser });

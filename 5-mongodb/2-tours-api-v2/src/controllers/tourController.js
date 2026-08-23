@@ -147,14 +147,14 @@ export const getDistances = catchAsync(async (req, res) => {
       $geoNear: {
         near: { type: "Point", coordinates: [+lat, +lng] },
         distanceField: "distance",
-        //todo km veya mile çevir
+        distanceMultiplier: unit === "mi" ? 0.000621371 : 0.001,
       },
     },
     // 2) istediğimiz alanları seç
     {
       $project: {
         name: 1,
-        distance: 2,
+        distance: 1,
       },
     },
   ]);

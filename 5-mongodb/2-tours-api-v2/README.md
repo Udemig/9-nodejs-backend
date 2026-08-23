@@ -227,3 +227,58 @@ User({
 - **Unique Index**
 - Aynı değerin tekrar edilmesini engeller
 - `email:{type:String,unique:true}`
+
+# Medya Depolama
+
+- Resim, video, ses, pdf gibi dosya içeriklerinin backend tarafından yönetilmesi
+- Veritabanları, medya içeriiklerini depolamak için optimizde edilmediklerinden dolayı kesinlikle doğrudan mongodb içerisinde medya kaydetmeyeceğiz
+
+## Medya Depolama Yöntemelei
+
+1. **Veritabanından Saklama**
+
+- Mongodb'de 16mb belge limiti bulunur
+- Performans düşüktür
+- Maliyetlidir
+- Gerçek hayat seneryolarında önerilmez
+
+2. **Server İçinde Saklama**
+
+- **Avantaj**
+- Basit
+- Küçük projeler için ideal
+- Development modunda tercih edilebilir
+
+- **Dezavantaj**
+- Sunucu çökme durumunda dosyalar kaybedilebilir
+- Ölçeklenemez
+- CDN yok
+
+3. **Cloud Storage**
+
+- En doğru yöntem budur
+- **PLATFORMLAR**
+- Amazon S3
+- Cloudinary
+- Google Cloud Storage
+- Firebase Storage
+
+- **Avantaj**
+- Ototmaik resize
+- Format dönüşümü
+- CDN Hazır
+- Görsel Optimizasyon
+- Oto yedekleme
+- Oto ölçekleme
+
+- **Dezavantaj**
+- Maaliyet
+
+## Medya Depolama Akışı
+
+- Bir kullanıcı fotoğraf yüklendiğinden ne olur?
+
+1. Client ----> Dosyayı backend'e gönderir
+2. Backend ---> Dosyayı bir storage alanına kaydeder
+3. Backend ---> Dosyanın URL'ini veritabanına kaydeder
+4. Client ----> Backend'in gönderdiği url sayesinde dosyayı ekrana basar
