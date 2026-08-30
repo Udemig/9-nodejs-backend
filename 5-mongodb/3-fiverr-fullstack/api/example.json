@@ -1,0 +1,899 @@
+[
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529810"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Modern ve Responsive Web Sitesi Geliştiririm",
+    "description": "Markanız veya işletmeniz için modern, hızlı, kullanıcı dostu ve tüm cihazlarla uyumlu profesyonel web siteleri geliştiririm.",
+    "reviewCount": 42,
+    "starCount": 200,
+    "category": "Programlama ve Teknoloji",
+    "coverImage": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Profesyonel Web Sitesi",
+    "packageDescription": "5 sayfaya kadar modern, responsive ve SEO uyumlu profesyonel web sitesi geliştirme hizmeti.",
+    "packagePrice": 350,
+    "packageFeatures": [
+      "Responsive tasarım",
+      "5 sayfaya kadar",
+      "İletişim formu",
+      "Temel SEO",
+      "Performans optimizasyonu",
+      "Kaynak kod teslimi"
+    ],
+    "packageDuration": 7,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T11:51:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:51:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529812"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "İşletmeniz İçin Dijital Pazarlama Stratejisi Hazırlarım",
+    "description": "Markanızın dijital görünürlüğünü artırmak ve daha fazla müşteriye ulaşmak için performans odaklı dijital pazarlama stratejileri oluştururum.",
+    "reviewCount": 28,
+    "starCount": 128,
+    "category": "Dijital Pazarlama",
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Dijital Büyüme Paketi",
+    "packageDescription": "Markanız için hedef kitle analizi, rakip analizi ve dijital reklam stratejisi hazırlanır.",
+    "packagePrice": 220,
+    "packageFeatures": [
+      "Hedef kitle analizi",
+      "Rakip analizi",
+      "Reklam stratejisi",
+      "İçerik önerileri",
+      "Anahtar kelime analizi",
+      "Performans raporu"
+    ],
+    "packageDuration": 6,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T11:53:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:53:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529813"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Profesyonel Makale ve Blog İçeriği Yazarım",
+    "description": "Web siteniz veya blogunuz için özgün, akıcı, SEO uyumlu ve hedef kitlenize uygun profesyonel içerikler hazırlayabilirim.",
+    "reviewCount": 56,
+    "starCount": 270,
+    "category": "Yazma ve Çeviri",
+    "coverImage": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "SEO İçerik Paketi",
+    "packageDescription": "Belirlediğiniz konu üzerine araştırılmış ve SEO kriterlerine uygun profesyonel makale hazırlanır.",
+    "packagePrice": 80,
+    "packageFeatures": [
+      "1500 kelimeye kadar",
+      "SEO uyumlu içerik",
+      "Anahtar kelime kullanımı",
+      "Başlık optimizasyonu",
+      "Özgün içerik",
+      "Dilbilgisi kontrolü"
+    ],
+    "packageDuration": 3,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T11:54:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:54:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529814"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Profesyonel Video Kurgu ve Montaj Yapabilirim",
+    "description": "YouTube, Instagram, reklam veya kurumsal projeleriniz için dinamik ve profesyonel video düzenleme hizmeti sunarım.",
+    "reviewCount": 46,
+    "starCount": 214,
+    "category": "Video ve Animasyon",
+    "coverImage": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Profesyonel Video Kurgu",
+    "packageDescription": "10 dakikaya kadar videonuz profesyonel şekilde düzenlenerek yayına hazır hale getirilir.",
+    "packagePrice": 160,
+    "packageFeatures": [
+      "10 dakikaya kadar video",
+      "Profesyonel kurgu",
+      "Renk düzenleme",
+      "Geçiş efektleri",
+      "Altyazı ekleme",
+      "Full HD teslim"
+    ],
+    "packageDuration": 4,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T11:55:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:55:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529815"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "İşletmenize Özel Yapay Zeka Çözümleri Geliştiririm",
+    "description": "İş süreçlerinizi hızlandırmak için yapay zeka destekli chatbot, içerik üretim sistemi ve özel otomasyon çözümleri geliştirebilirim.",
+    "reviewCount": 19,
+    "starCount": 91,
+    "category": "Yapay Zeka Hizmetleri",
+    "coverImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1593376893114-1aed528d80cf?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "AI Otomasyon Paketi",
+    "packageDescription": "İhtiyacınıza göre özelleştirilmiş yapay zeka destekli bir otomasyon veya chatbot çözümü geliştirilir.",
+    "packagePrice": 500,
+    "packageFeatures": [
+      "AI entegrasyonu",
+      "Özel chatbot",
+      "API entegrasyonu",
+      "Prompt optimizasyonu",
+      "Yönetim paneli",
+      "Kaynak kod teslimi"
+    ],
+    "packageDuration": 10,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T11:56:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:56:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529816"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Şarkınız İçin Profesyonel Mix ve Mastering Yaparım",
+    "description": "Şarkı, podcast veya ses kayıtlarınızı profesyonel standartlarda mix ve mastering işleminden geçirerek yayına hazır hale getiririm.",
+    "reviewCount": 34,
+    "starCount": 160,
+    "category": "Müzik ve Ses",
+    "coverImage": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Mix & Mastering Paketi",
+    "packageDescription": "Bir müzik veya ses projesi profesyonel mix ve mastering işleminden geçirilir.",
+    "packagePrice": 120,
+    "packageFeatures": [
+      "Profesyonel mix",
+      "Mastering",
+      "EQ düzenleme",
+      "Noise temizleme",
+      "WAV teslim",
+      "MP3 teslim"
+    ],
+    "packageDuration": 4,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T11:57:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:57:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529817"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "İşletmeniz İçin Profesyonel İş Planı Hazırlarım",
+    "description": "Yeni girişiminiz veya mevcut işletmeniz için yatırımcı sunumlarında kullanılabilecek kapsamlı ve profesyonel iş planları hazırlayabilirim.",
+    "reviewCount": 22,
+    "starCount": 100,
+    "category": "İş",
+    "coverImage": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Profesyonel İş Planı",
+    "packageDescription": "İş modeliniz analiz edilerek yatırımcı ve şirket içi kullanım için kapsamlı iş planı hazırlanır.",
+    "packagePrice": 280,
+    "packageFeatures": [
+      "İş modeli analizi",
+      "Pazar araştırması",
+      "Rakip analizi",
+      "Gelir modeli",
+      "SWOT analizi",
+      "PDF teslim"
+    ],
+    "packageDuration": 7,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T11:58:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:58:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529818"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Girişiminiz İçin Stratejik İş Danışmanlığı Veririm",
+    "description": "İş modelinizi geliştirmek, operasyonel sorunları çözmek ve sürdürülebilir büyüme sağlamak için profesyonel danışmanlık sunarım.",
+    "reviewCount": 17,
+    "starCount": 76,
+    "category": "Danışmanlık",
+    "coverImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Stratejik Danışmanlık",
+    "packageDescription": "İşletmenizin mevcut durumu analiz edilerek uygulanabilir büyüme ve iyileştirme önerileri hazırlanır.",
+    "packagePrice": 200,
+    "packageFeatures": [
+      "60 dakika görüşme",
+      "Mevcut durum analizi",
+      "SWOT analizi",
+      "Büyüme önerileri",
+      "Aksiyon planı",
+      "Görüşme sonrası rapor"
+    ],
+    "packageDuration": 3,
+    "packageRevision": 1,
+    "createdAt": {
+      "$date": "2026-08-22T11:59:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T11:59:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da529819"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Birebir Online Yazılım Eğitimi Veririm",
+    "description": "HTML, CSS, JavaScript ve React konularında başlangıçtan ileri seviyeye kadar birebir ve uygulamalı online eğitim verebilirim.",
+    "reviewCount": 61,
+    "starCount": 296,
+    "category": "Eğitim ve Ders",
+    "coverImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Web Development Eğitimi",
+    "packageDescription": "Birebir online görüşme ile web geliştirme konularında uygulamalı eğitim verilir.",
+    "packagePrice": 90,
+    "packageFeatures": [
+      "2 saat birebir eğitim",
+      "HTML ve CSS",
+      "JavaScript",
+      "React temelleri",
+      "Uygulamalı proje",
+      "Ders materyalleri"
+    ],
+    "packageDuration": 2,
+    "packageRevision": 1,
+    "createdAt": {
+      "$date": "2026-08-22T12:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da52981a"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Profesyonel Ürün Fotoğrafları Çekerim",
+    "description": "E-ticaret mağazanız, sosyal medya hesabınız veya reklam kampanyalarınız için profesyonel ürün fotoğrafları hazırlayabilirim.",
+    "reviewCount": 39,
+    "starCount": 183,
+    "category": "Fotoğrafçılık",
+    "coverImage": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1493863641943-9b68992a8d07?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Ürün Fotoğrafçılığı Paketi",
+    "packageDescription": "10 ürüne kadar profesyonel çekim ve temel fotoğraf düzenleme hizmeti.",
+    "packagePrice": 240,
+    "packageFeatures": [
+      "10 ürüne kadar",
+      "20 düzenlenmiş fotoğraf",
+      "Işık düzenlemesi",
+      "Renk düzenlemesi",
+      "Arka plan temizleme",
+      "Yüksek çözünürlük"
+    ],
+    "packageDuration": 5,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T12:01:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:01:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a899177a23c2188da52981b"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Markanızın Sosyal Medya Hesaplarını Profesyonel Yönetirim",
+    "description": "Instagram, Facebook ve diğer sosyal medya hesaplarınız için içerik planlama, paylaşım ve büyüme odaklı hesap yönetimi yapabilirim.",
+    "reviewCount": 48,
+    "starCount": 227,
+    "category": "Sosyal Medya Yönetimi",
+    "coverImage": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Aylık Sosyal Medya Yönetimi",
+    "packageDescription": "Markanız için bir aylık sosyal medya içerik planı hazırlanır ve hesap yönetimi gerçekleştirilir.",
+    "packagePrice": 300,
+    "packageFeatures": [
+      "12 gönderi tasarımı",
+      "8 story tasarımı",
+      "İçerik takvimi",
+      "Caption yazımı",
+      "Hashtag araştırması",
+      "Aylık performans raporu"
+    ],
+    "packageDuration": 30,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:02:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:02:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da52981d"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Node.js ve React ile Full Stack Web Uygulaması Geliştiririm",
+    "description": "İhtiyacınıza özel modern, hızlı ve ölçeklenebilir full stack web uygulamaları geliştiririm.",
+    "reviewCount": 33,
+    "starCount": 159,
+    "category": "Programlama ve Teknoloji",
+    "coverImage": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Full Stack Web Uygulaması",
+    "packageDescription": "React ve Node.js kullanılarak temel özelliklere sahip full stack web uygulaması geliştirilir.",
+    "packagePrice": 600,
+    "packageFeatures": [
+      "React frontend",
+      "Node.js backend",
+      "MongoDB entegrasyonu",
+      "REST API",
+      "Responsive tasarım",
+      "Kaynak kod teslimi"
+    ],
+    "packageDuration": 14,
+    "packageRevision": 4,
+    "createdAt": {
+      "$date": "2026-08-22T12:10:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:10:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da52981e"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Sosyal Medyanız İçin Profesyonel Post Tasarımları Hazırlarım",
+    "description": "Markanızın sosyal medya hesapları için dikkat çekici, modern ve kurumsal gönderi tasarımları oluştururum.",
+    "reviewCount": 44,
+    "starCount": 205,
+    "category": "Grafik Tasarım",
+    "coverImage": "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1561070791-36c11767b26a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Sosyal Medya Tasarım Paketi",
+    "packageDescription": "Markanız için 10 adet profesyonel sosyal medya gönderisi tasarlanır.",
+    "packagePrice": 140,
+    "packageFeatures": [
+      "10 gönderi tasarımı",
+      "Instagram uyumlu",
+      "Facebook uyumlu",
+      "Kurumsal renk kullanımı",
+      "PNG teslim",
+      "Kaynak dosya teslimi"
+    ],
+    "packageDuration": 4,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:11:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:11:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da52981f"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Google Ads Kampanyalarınızı Kurar ve Optimize Ederim",
+    "description": "İşletmeniz için dönüşüm odaklı Google Ads kampanyaları oluşturur, optimize eder ve performansını analiz ederim.",
+    "reviewCount": 29,
+    "starCount": 134,
+    "category": "Dijital Pazarlama",
+    "coverImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Google Ads Yönetimi",
+    "packageDescription": "Google Ads hesabınız için reklam kampanyası kurulumu ve temel optimizasyon işlemleri yapılır.",
+    "packagePrice": 250,
+    "packageFeatures": [
+      "Anahtar kelime araştırması",
+      "Kampanya kurulumu",
+      "Reklam metinleri",
+      "Negatif kelime analizi",
+      "Dönüşüm optimizasyonu",
+      "Performans raporu"
+    ],
+    "packageDuration": 7,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T12:12:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:12:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529820"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "İngilizce Türkçe Profesyonel Çeviri Yaparım",
+    "description": "Web sitesi, makale, ürün açıklaması ve genel içerikleriniz için İngilizce Türkçe profesyonel çeviri hizmeti sunarım.",
+    "reviewCount": 72,
+    "starCount": 351,
+    "category": "Yazma ve Çeviri",
+    "coverImage": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Profesyonel Çeviri Paketi",
+    "packageDescription": "2000 kelimeye kadar İngilizce Türkçe veya Türkçe İngilizce profesyonel çeviri yapılır.",
+    "packagePrice": 70,
+    "packageFeatures": [
+      "2000 kelimeye kadar",
+      "Manuel çeviri",
+      "Dilbilgisi kontrolü",
+      "Anlam bütünlüğü",
+      "Word teslim",
+      "PDF teslim"
+    ],
+    "packageDuration": 2,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T12:13:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:13:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529821"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Markanız İçin Profesyonel Tanıtım Videosu Hazırlarım",
+    "description": "Markanızı, ürününüzü veya hizmetinizi etkileyici şekilde tanıtacak profesyonel reklam ve tanıtım videoları hazırlarım.",
+    "reviewCount": 36,
+    "starCount": 170,
+    "category": "Video ve Animasyon",
+    "coverImage": "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Tanıtım Videosu Paketi",
+    "packageDescription": "60 saniyeye kadar profesyonel tanıtım videosu hazırlanır.",
+    "packagePrice": 230,
+    "packageFeatures": [
+      "60 saniyeye kadar",
+      "Profesyonel kurgu",
+      "Metin animasyonları",
+      "Müzik ekleme",
+      "Renk düzenleme",
+      "Full HD teslim"
+    ],
+    "packageDuration": 5,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:14:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:14:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529822"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Web Sitenize Yapay Zeka Destekli Chatbot Entegre Ederim",
+    "description": "Web siteniz için müşterilerinizin sorularını otomatik yanıtlayabilen yapay zeka destekli özel chatbot sistemi geliştiririm.",
+    "reviewCount": 25,
+    "starCount": 119,
+    "category": "Yapay Zeka Hizmetleri",
+    "coverImage": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "AI Chatbot Entegrasyonu",
+    "packageDescription": "Web sitenize temel yapay zeka destekli müşteri destek chatbotu entegre edilir.",
+    "packagePrice": 420,
+    "packageFeatures": [
+      "AI chatbot",
+      "Web sitesi entegrasyonu",
+      "Özel prompt sistemi",
+      "API entegrasyonu",
+      "Mobil uyumlu widget",
+      "Kaynak kod teslimi"
+    ],
+    "packageDuration": 8,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:15:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:15:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529823"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Podcast Kayıtlarınızı Profesyonel Olarak Düzenlerim",
+    "description": "Podcast kayıtlarınızdaki gürültüleri temizler, ses seviyelerini düzenler ve profesyonel yayın kalitesine getiririm.",
+    "reviewCount": 41,
+    "starCount": 192,
+    "category": "Müzik ve Ses",
+    "coverImage": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1589903308904-1010c2294adc?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Podcast Düzenleme Paketi",
+    "packageDescription": "60 dakikaya kadar podcast kaydı profesyonel şekilde düzenlenir.",
+    "packagePrice": 100,
+    "packageFeatures": [
+      "60 dakikaya kadar",
+      "Gürültü temizleme",
+      "Ses seviyesi düzenleme",
+      "Intro outro ekleme",
+      "MP3 teslim",
+      "WAV teslim"
+    ],
+    "packageDuration": 3,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T12:16:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:16:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529824"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Profesyonel Sunum ve Pitch Deck Hazırlarım",
+    "description": "Yatırımcı, müşteri veya şirket toplantılarınız için profesyonel ve etkileyici sunumlar hazırlarım.",
+    "reviewCount": 26,
+    "starCount": 119,
+    "category": "İş",
+    "coverImage": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Pitch Deck Paketi",
+    "packageDescription": "15 slayta kadar profesyonel şirket veya yatırımcı sunumu hazırlanır.",
+    "packagePrice": 190,
+    "packageFeatures": [
+      "15 slayta kadar",
+      "Modern tasarım",
+      "Grafik ve tablolar",
+      "Kurumsal renkler",
+      "PowerPoint teslim",
+      "PDF teslim"
+    ],
+    "packageDuration": 5,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:17:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:17:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529825"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "E-Ticaret İşletmeniz İçin Strateji Danışmanlığı Veririm",
+    "description": "E-ticaret mağazanızın satışlarını artırmak, dönüşüm oranlarını iyileştirmek ve büyüme stratejisi oluşturmak için danışmanlık sunarım.",
+    "reviewCount": 21,
+    "starCount": 95,
+    "category": "Danışmanlık",
+    "coverImage": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "E-Ticaret Danışmanlığı",
+    "packageDescription": "E-ticaret işletmeniz analiz edilerek satış ve dönüşüm artırmaya yönelik aksiyon planı hazırlanır.",
+    "packagePrice": 210,
+    "packageFeatures": [
+      "Mağaza analizi",
+      "Rakip analizi",
+      "Dönüşüm analizi",
+      "Satış stratejisi",
+      "90 dakika görüşme",
+      "Aksiyon raporu"
+    ],
+    "packageDuration": 3,
+    "packageRevision": 1,
+    "createdAt": {
+      "$date": "2026-08-22T12:18:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:18:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529826"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Başlangıç Seviyesi İngilizce Özel Ders Veririm",
+    "description": "İngilizce öğrenmeye yeni başlayanlar için konuşma, kelime bilgisi ve temel gramer odaklı birebir online dersler veririm.",
+    "reviewCount": 58,
+    "starCount": 280,
+    "category": "Eğitim ve Ders",
+    "coverImage": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Online İngilizce Dersi",
+    "packageDescription": "Başlangıç seviyesine uygun iki saatlik birebir online İngilizce eğitimi.",
+    "packagePrice": 60,
+    "packageFeatures": [
+      "2 saat online ders",
+      "Temel gramer",
+      "Konuşma pratiği",
+      "Kelime çalışması",
+      "Ders materyalleri",
+      "Seviye değerlendirmesi"
+    ],
+    "packageDuration": 2,
+    "packageRevision": 1,
+    "createdAt": {
+      "$date": "2026-08-22T12:19:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:19:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529827"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Profesyonel Portre ve Profil Fotoğrafı Çekerim",
+    "description": "LinkedIn, sosyal medya, kişisel marka veya kurumsal kullanım için profesyonel portre fotoğrafları çekerim.",
+    "reviewCount": 37,
+    "starCount": 174,
+    "category": "Fotoğrafçılık",
+    "coverImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1521119989659-a83eee488004?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Profesyonel Portre Çekimi",
+    "packageDescription": "Profesyonel kullanım için portre çekimi ve düzenlenmiş fotoğraf teslimi yapılır.",
+    "packagePrice": 170,
+    "packageFeatures": [
+      "1 saat çekim",
+      "10 düzenlenmiş fotoğraf",
+      "Renk düzenleme",
+      "Retouch işlemi",
+      "Yüksek çözünürlük",
+      "Dijital teslim"
+    ],
+    "packageDuration": 3,
+    "packageRevision": 2,
+    "createdAt": {
+      "$date": "2026-08-22T12:20:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:20:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a8991cca23c2188da529828"
+    },
+    "user": {
+      "$oid": "6a898756b39e0183423557f5"
+    },
+    "title": "Instagram Hesabınızı Organik Olarak Büyütürüm",
+    "description": "Markanızın Instagram hesabı için içerik stratejisi, etkileşim planı ve organik büyüme odaklı sosyal medya yönetimi sunarım.",
+    "reviewCount": 52,
+    "starCount": 246,
+    "category": "Sosyal Medya Yönetimi",
+    "coverImage": "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "packageTitle": "Instagram Büyüme Paketi",
+    "packageDescription": "Instagram hesabınız için bir aylık içerik ve organik büyüme stratejisi uygulanır.",
+    "packagePrice": 320,
+    "packageFeatures": [
+      "12 gönderi planı",
+      "12 içerik metni",
+      "Hashtag analizi",
+      "Rakip analizi",
+      "Etkileşim stratejisi",
+      "Aylık rapor"
+    ],
+    "packageDuration": 30,
+    "packageRevision": 3,
+    "createdAt": {
+      "$date": "2026-08-22T12:21:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-08-22T12:21:00.000Z"
+    }
+  }
+]

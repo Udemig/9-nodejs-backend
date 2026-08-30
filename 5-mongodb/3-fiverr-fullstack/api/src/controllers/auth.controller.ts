@@ -35,13 +35,13 @@ const login = catchAsync(async (req: Request, res: Response, next: NextFunction)
   });
 
   // kullanıcı bulunamazsa
-  if (!user) throw new Unauthorized("Giriş bilgileri hatalı 1");
+  if (!user) throw new Unauthorized("Giriş bilgileri hatalı");
 
   // veritabında hashli saklanan şifre ile body kısmında normal gönderilen şifreyi karşılaştır
   const isPasswordCorrect = bcrypt.compareSync(req.body.password, user.password);
 
   // şifre yanlışsa ise
-  if (!isPasswordCorrect) throw new Unauthorized("Giriş bilgileri hatalı 2");
+  if (!isPasswordCorrect) throw new Unauthorized("Giriş bilgileri hatalı");
 
   // jwt tokeni oluştur
   const token = jwt.sign({ id: user._id, isSeller: user.isSeller }, config.JWT_SECRET, {

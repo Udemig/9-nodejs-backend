@@ -19,6 +19,12 @@ export const config = {
   // JWT
   JWT_SECRET: process.env.JWT_SECRET as string,
   JWT_EXPIRES: Number(process.env.JWT_EXPIRES),
+
+  // rate limit
+  AUTH_LIMIT_MS: Number(process.env.AUTH_LIMIT_MS),
+  AUTH_LIMIT_MAX: Number(process.env.AUTH_LIMIT_MAX),
+  GLOBAL_LIMIT_MS: Number(process.env.GLOBAL_LIMIT_MS),
+  GLOBAL_LIMIT_MAX: Number(process.env.GLOBAL_LIMIT_MAX),
 };
 
 export const isDevelopment = config.NODE_ENV === "development";
