@@ -1,0 +1,24 @@
+version: "3.8" # Docker compose dosyasının sürümüdür
+
+services:
+  backend: # Backend container'ı
+    container_name: tour-api # Container ismi
+    build: . # Bu dizindeki dockerfile'ı işaret eder
+    ports:
+      - 3000:3000 # Hangi port
+    env_file:
+      - .env # Hangi env dosyasını kulllanıcağını belirle
+    depends_on:
+      - mongo # Mongo container'ı ayağa kalkmadan bu container başlamaz
+
+  mongo: # MongoDB container'ı
+    image: mongo:7 # Hazır mongo imajını kullan
+    container_name: tour-mongo
+    restart: always # Eğer container çökerse otomatik restart olur
+    ports:
+      - 27017:2707
+    volumes:
+      - "mongodb_data:/data/db" # Veriler kalıcı olsun, container silinse bile kaybolmasın
+
+volumes:
+  mongodb_data: # Mongodb için kalıcı veri deposu
