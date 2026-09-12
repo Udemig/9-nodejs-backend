@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.red-badge {
+  @apply bg-red-500/20 text-red-500 w-fit m-20 mx-auto p-3 rounded-lg text-base font-bold;
+}
+
+.blue-badge {
+  @apply bg-blue-500/20 text-blue-500 w-fit m-20 mx-auto p-3 rounded-lg text-base font-bold;
+}
+
+.red-box {
+  @apply p-10 rounded-md text-center border border-red-500 text-red-500 mt-10;
+}
+
+.blue-box {
+  @apply p-10 rounded-md text-center border border-blue-500 text-blue-500 mt-10;
+}
