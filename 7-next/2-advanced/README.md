@@ -112,3 +112,15 @@
 - Next.js varsayılan olarak urlde parametresi olan bütün sayfaları dinamic yapar.
 - Bunun sebebi url'deki parametrenin ne olucağının belirsiz olmasıdır.
 - Bazı durumlarda detay sayfalarının alabileceği parametreler kısıtlı olur bu tarz durumlarda dinamik olan detay sayfalarını generateStaticParams yöntemiyle static hale çevirmek mümkündür.
+
+# Fullstack Framework
+
+- Next.js bize hem frontend hemde backend kodlarını tek bir proje içerisinde yazmayı vaad ediyor.
+- Next.js, api oluştururken nodejs/express api'lardan farklı olarak klasör bazlı routing kullanır
+- Backend kodlarını frontend kodlarıyla aynı proje yazmanın faydaları:
+- - pratik
+- - backend için ayrı bir yayınlama gerekmez
+
+- Backend route'larını oluşturmak için `app klasörü` içerisine `api klasörü` oluşturuyoruz
+- Oluşturmak istediğimiz her endpoint için yeni bir klasör ve o klasör içerisinde `route.js` dosyası oluştururuz
+- Oluşturduğumuz route dosyaları içerisinde cevap vermek istediğimiz HTTP Methoduyla aynı isimde bir fonksiyon tanımlarız.
