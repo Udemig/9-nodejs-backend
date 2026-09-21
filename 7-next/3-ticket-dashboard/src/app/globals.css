@@ -29,4 +29,26 @@ body {
   button {
     @apply cursor-pointer transition duration-300 disabled:brightness-75;
   }
+
+  *::-webkit-scrollbar {
+    @apply bg-black w-3.25;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply bg-zinc-600 rounded cursor-pointer hover:bg-zinc-500 transition;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply relative text-gray-400 p-2 hover:text-gray-100 hover:bg-zinc-800 rounded-lg transition;
+  }
+
+  .icon-info {
+    @apply absolute -top-1 -right-1 size-5 bg-red-500 rounded-full text-xs text-white grid place-items-center;
+  }
+
+  .input {
+    @apply w-full p-2 border border-gray-600 rounded-md bg-zinc-800 text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
 }

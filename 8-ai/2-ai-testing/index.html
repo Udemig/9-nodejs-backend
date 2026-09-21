@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova — The Future of Digital Workspaces</title>
+  <meta name="description" content="Nova is the next-generation spatial AI workspace designed for visionary builders, autonomous workflows, and real-time team intelligence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Background Canvas / Lighting Orbs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="url(#logo-gradient)"/>
+            <path d="M10 26L18 10L26 26" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="18" r="3.5" fill="#00f2fe"/>
+            <defs>
+              <linearGradient id="logo-gradient" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7F00FF"/>
+                <stop offset="1" stop-color="#00F2FE"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-name">NOVA<span class="brand-dot">.</span></span>
+        <span class="badge-version">v2.5</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#demo" class="nav-link">Interactive Demo</a>
+        <a href="#metrics" class="nav-link">Metrics</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <div class="mobile-nav-actions">
+          <button class="btn btn-ghost" id="openSignInMobileBtn">Sign In</button>
+          <button class="btn btn-primary" id="openGetStartedMobileBtn">Launch Workspace</button>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Ambient theme accent switcher -->
+        <button class="ambient-toggle-btn" id="ambientToggleBtn" title="Toggle Aurora Glow Accent" aria-label="Toggle Lighting Style">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="btn btn-ghost" id="openSignInBtn">Sign In</button>
+        <button class="btn btn-primary glow-effect" id="openGetStartedBtn">
+          <span>Get Early Access</span>
+          <svg viewBox="0 0 16 16" fill="none" class="arrow-icon">
+            <path d="M3.33334 8H12.6667M12.6667 8L8.00001 3.33334M12.6667 8L8.00001 12.6667" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-pill-wrapper">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span class="pill-text">Announcing Nova Autonomous Agent Mesh 2.0</span>
+          <svg viewBox="0 0 16 16" fill="none" class="pill-arrow">
+            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <h1 class="hero-headline">
+        The Future of <br>
+        <span class="gradient-text text-shimmer">Digital Workspaces</span> <br>
+        Has Arrived.
+      </h1>
+
+      <p class="hero-subline">
+        Nova orchestrates human creativity and agentic intelligence across an infinite, zero-latency spatial canvas. Design, code, analyze, and build together at the speed of thought.
+      </p>
+
+      <div class="hero-cta-group">
+        <button class="btn btn-primary btn-large glow-effect" id="heroStartBtn">
+          <span>Start Free Exploration</span>
+          <svg viewBox="0 0 16 16" fill="none" class="btn-arrow">
+            <path d="M3.33 8H12.67M12.67 8L8 3.33M12.67 8L8 12.67" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="btn btn-glass btn-large" id="heroTourBtn">
+          <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon">
+            <polygon points="6,3 20,12 6,21" />
+          </svg>
+          <span>Watch 2-Min Demo</span>
+        </button>
+      </div>
+
+      <!-- Trust signals / Avatars -->
+      <div class="hero-social-proof">
+        <div class="avatar-stack">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="User 1" class="avatar">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="User 2" class="avatar">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="User 3" class="avatar">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="User 4" class="avatar">
+          <span class="avatar-count">+4.8k</span>
+        </div>
+        <div class="proof-text">
+          <div class="stars">★★★★★</div>
+          <span>Trusted by 45,000+ teams from OpenAI, Stripe & Figma</span>
+        </div>
+      </div>
+
+      <!-- Futuristic HUD / Interactive Hero Mockup -->
+      <div class="hero-canvas-frame" id="heroMockup">
+        <div class="frame-glass-glow"></div>
+        <div class="frame-header">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="workspace-tab active">
+            <svg viewBox="0 0 16 16" fill="none" class="tab-icon">
+              <path d="M2 4h12v10H2z" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M6 4v10" stroke="currentColor" stroke-width="1.3"/>
+            </svg>
+            <span>Project-Omni-Genesis.nova</span>
+          </div>
+          <div class="frame-badge">
+            <span class="status-indicator"></span> 9.2ms Quantum Synapse
+          </div>
+        </div>
+
+        <div class="frame-body">
+          <!-- Left Navigation Rail -->
+          <aside class="mockup-sidebar">
+            <div class="mockup-side-item active" title="Active Canvas">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+            </div>
+            <div class="mockup-side-item" title="Neural Graph">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <div class="mockup-side-item" title="Autonomous Agents">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            </div>
+            <div class="mockup-side-item" title="Security Vault">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+          </aside>
+
+          <!-- Main Stage Viewport -->
+          <main class="mockup-viewport">
+            <div class="viewport-hud-toolbar">
+              <div class="tool-group">
+                <span class="chip active">Spatial Canvas</span>
+                <span class="chip">Agent Pipeline</span>
+                <span class="chip">Code Vector</span>
+              </div>
+              <div class="live-collab-users">
+                <span class="collab-badge pulse">Elena (AI Lead)</span>
+                <span class="collab-badge cyan">Kael (Infra)</span>
+                <span class="collab-badge purple">Nova Agent #04</span>
+              </div>
+            </div>
+
+            <!-- Interconnected Nodes on Canvas -->
+            <div class="canvas-nodes-container">
+              <div class="canvas-node node-primary" id="node1">
+                <div class="node-tag">Agent Task</div>
+                <div class="node-title">Vector Synthesis</div>
+                <div class="node-content">Parsing 4.2M embeddings from distributed nodes...</div>
+                <div class="node-progress"><span style="width: 78%;"></span></div>
+              </div>
+
+              <div class="canvas-connector connector-1"></div>
+
+              <div class="canvas-node node-secondary" id="node2">
+                <div class="node-tag">Autonomous Core</div>
+                <div class="node-title">Synapse Bridge</div>
+                <div class="node-badge-online">Synchronized</div>
+              </div>
+
+              <div class="canvas-connector connector-2"></div>
+
+              <div class="canvas-node node-accent" id="node3">
+                <div class="node-tag">Deployment</div>
+                <div class="node-title">Edge Edge-Mesh v2</div>
+                <div class="node-stat-pill">Latency: 6.8ms</div>
+              </div>
+            </div>
+
+            <!-- Interactive AI Chat Prompt Bar inside Hero Mockup -->
+            <div class="mockup-interactive-bar">
+              <div class="sparkle-icon">✦</div>
+              <input type="text" id="heroPromptInput" placeholder="Ask Nova AI to synthesize team notes, build a workflow, or query state..." value="Generate cloud-native event architecture and sync with Figma token specs">
+              <button class="prompt-exec-btn" id="heroPromptSubmit">Run Prompt</button>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- Partner / Client Logo Scroller -->
+      <div class="clients-banner">
+        <p class="clients-title">EMPOWERING DECK & PRODUCT TEAMS GLOBALLY</p>
+        <div class="logo-track-wrapper">
+          <div class="logo-track">
+            <span class="client-logo">⬡ HYPERION DATA</span>
+            <span class="client-logo">▲ NEXUS LABS</span>
+            <span class="client-logo">◈ QUANTUM FLOW</span>
+            <span class="client-logo">◉ SYNAPSE SYSTEMS</span>
+            <span class="client-logo">◆ VECTOR SPATIAL</span>
+            <span class="client-logo">⬢ APEX ROBOTICS</span>
+            <!-- Duplicated for seamless loop -->
+            <span class="client-logo">⬡ HYPERION DATA</span>
+            <span class="client-logo">▲ NEXUS LABS</span>
+            <span class="client-logo">◈ QUANTUM FLOW</span>
+            <span class="client-logo">◉ SYNAPSE SYSTEMS</span>
+            <span class="client-logo">◆ VECTOR SPATIAL</span>
+            <span class="client-logo">⬢ APEX ROBOTICS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Feature Cards Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">CORE CAPABILITIES</div>
+        <h2 class="section-title">Engineered For The Autonomous Work Era</h2>
+        <p class="section-description">
+          Traditional project management tools are flat and fractured. Nova breaks down silos with an adaptive, multidimensional operating layer.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card" data-tilt>
+          <div class="feature-glow"></div>
+          <div class="card-inner">
+            <div class="feature-icon-box cyan-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-title">Infinite Spatial Canvas</h3>
+            <p class="feature-text">
+              Organize notes, code snippets, architectural diagrams, and databases in unbounded space with intuitive zooming and neural auto-grouping.
+            </p>
+            <ul class="feature-checklist">
+              <li><span class="check-icon">✓</span> Multi-scale continuous LOD zoom</li>
+              <li><span class="check-icon">✓</span> Bi-directional document linking</li>
+              <li><span class="check-icon">✓</span> Native markdown & live code execution</li>
+            </ul>
+            <div class="card-footer-action">
+              <span class="learn-link">Explore Spatial Engine →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card" data-tilt>
+          <div class="feature-glow"></div>
+          <div class="card-inner">
+            <div class="feature-icon-box purple-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                <path d="M12 2a10 10 0 0 1 10 10"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-title">Autonomous Agent Mesh</h3>
+            <p class="feature-text">
+              Deploy specialized AI workers that perform deep research, triage bug queues, draft PR summaries, and proactively unblock team bottlenecks.
+            </p>
+            <ul class="feature-checklist">
+              <li><span class="check-icon">✓</span> Multi-agent coordination matrix</li>
+              <li><span class="check-icon">✓</span> Background continuous context indexing</li>
+              <li><span class="check-icon">✓</span> Custom prompt skills & web capabilities</li>
+            </ul>
+            <div class="card-footer-action">
+              <span class="learn-link">View Agent Framework →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card" data-tilt>
+          <div class="feature-glow"></div>
+          <div class="card-inner">
+            <div class="feature-icon-box emerald-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Sub-Millisecond Synapse Sync</h3>
+            <p class="feature-text">
+              Built on peer-to-peer CRDT technology and edge-distributed state, experience conflict-free real-time collaboration with zero perceivable latency.
+            </p>
+            <ul class="feature-checklist">
+              <li><span class="check-icon">✓</span> Offline-first persistent state architecture</li>
+              <li><span class="check-icon">✓</span> End-to-end differential sync</li>
+              <li><span class="check-icon">✓</span> Hardware-accelerated WebGPU rendering</li>
+            </ul>
+            <div class="card-footer-action">
+              <span class="learn-link">Check Network Benchmarks →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card" data-tilt>
+          <div class="feature-glow"></div>
+          <div class="card-inner">
+            <div class="feature-icon-box amber-glow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Quantum Zero-Trust Security</h3>
+            <p class="feature-text">
+              Your proprietary intellectual property is protected by military-grade AES-256-GCM encryption and zero-knowledge identity graphs.
+            </p>
+            <ul class="feature-checklist">
+              <li><span class="check-icon">✓</span> Client-side asymmetric key derivation</li>
+              <li><span class="check-icon">✓</span> SOC2 Type II, GDPR, HIPAA ready</li>
+              <li><span class="check-icon">✓</span> Self-hosted private cloud or air-gap option</li>
+            </ul>
+            <div class="card-footer-action">
+              <span class="learn-link">Read Whitepaper →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Statistics Section (Counters with JS) -->
+  <section class="metrics-section" id="metrics">
+    <div class="container">
+      <div class="metrics-container glass-panel">
+        <div class="metric-box">
+          <div class="metric-number-wrapper">
+            <span class="metric-counter" data-target="99.99" data-decimals="2">0</span>
+            <span class="metric-unit">%</span>
+          </div>
+          <div class="metric-label">Guaranteed High-Availability SLA</div>
+          <div class="metric-trend up">↑ 0.04% vs legacy SaaS</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric-box">
+          <div class="metric-number-wrapper">
+            <span class="metric-counter" data-target="4.8" data-decimals="1">0</span>
+            <span class="metric-unit">x</span>
+          </div>
+          <div class="metric-label">Acceleration in Product Velocity</div>
+          <div class="metric-trend up">↑ Verified by Forrester</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric-box">
+          <div class="metric-number-wrapper">
+            <span class="metric-counter" data-target="140" data-decimals="0">0</span>
+            <span class="metric-unit">K+</span>
+          </div>
+          <div class="metric-label">Active Workspaces Spawned</div>
+          <div class="metric-trend up">↑ 220% YoY Growth</div>
+        </div>
+
+        <div class="metric-divider"></div>
+
+        <div class="metric-box">
+          <div class="metric-number-wrapper">
+            <span class="metric-counter" data-target="8" data-decimals="0">0</span>
+            <span class="metric-unit">ms</span>
+          </div>
+          <div class="metric-label">Global P95 Edge Sync Latency</div>
+          <div class="metric-trend speed">⚡ 32 Edge PoPs Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Product Sandbox / Demo Section -->
+  <section class="demo-section" id="demo">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">INTERACTIVE LAB</div>
+        <h2 class="section-title">Experience Nova's Operating System</h2>
+        <p class="section-description">
+          Click the functional modules below to preview how Nova adapts to complex developer, design, and strategic workflows in real-time.
+        </p>
+      </div>
+
+      <div class="demo-wrapper glass-panel">
+        <!-- Tab Navigation Switcher -->
+        <div class="demo-tabs-nav" role="tablist">
+          <button class="demo-tab-btn active" data-tab="ai-copilot">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M4.93 10.93a2 2 0 0 1 2.83 0l1.41 1.41a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-1.41-1.41a2 2 0 0 1 0-2.83z"/><path d="M2 18a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M20 18a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2 2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z"/><circle cx="12" cy="14" r="4"/></svg>
+            <span>Autonomous Copilot</span>
+          </button>
+          <button class="demo-tab-btn" data-tab="spatial-canvas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Spatial Graph Engine</span>
+          </button>
+          <button class="demo-tab-btn" data-tab="command-palette">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+            <span>Universal Command (⌘K)</span>
+          </button>
+          <button class="demo-tab-btn" data-tab="live-telemetry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+            <span>Edge Telemetry</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: AI Copilot Sandbox -->
+        <div class="demo-tab-pane active" id="pane-ai-copilot">
+          <div class="demo-grid-two-col">
+            <div class="demo-controls-side">
+              <h4 class="demo-title">Simulate Real-Time Workspace Agent</h4>
+              <p class="demo-desc">Select a preset agent command or type your custom instruction to test live token synthesis:</p>
+              
+              <div class="prompt-chips-list">
+                <button class="chip-action" data-prompt="Analyze security compliance across microservices and map CVE exposure">🛡️ Audit Microservices</button>
+                <button class="chip-action" data-prompt="Draft architectural technical spec for distributed Redis caching layer">⚡ Cache Spec Generation</button>
+                <button class="chip-action" data-prompt="Convert Figma design token exports into Tailwind and WebGL shader code">🎨 Token Synchronization</button>
+              </div>
+
+              <div class="custom-prompt-input-box">
+                <input type="text" id="demoCustomInput" placeholder="Type prompt here (e.g. 'Optimize graph cluster queries')...">
+                <button class="btn btn-primary btn-sm" id="demoSubmitPrompt">Synthesize</button>
+              </div>
+
+              <div class="demo-agent-meta">
+                <span class="meta-item">Model: <strong>Nova-Omni-v4 (Local & Edge)</strong></span>
+                <span class="meta-item">Latency: <strong id="simulatedLatency">14ms</strong></span>
+              </div>
+            </div>
+
+            <div class="demo-display-side terminal-window">
+              <div class="terminal-bar">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+                <span class="terminal-title">nova-agent-output.json</span>
+                <button class="terminal-copy-btn" id="copyOutputBtn" title="Copy output">Copy</button>
+              </div>
+              <div class="terminal-content">
+                <pre><code id="copilotStreamOutput">✨ Ready. Click any preset above or type your prompt to execute Nova's autonomous agent stream.</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Spatial Canvas Sandbox -->
+        <div class="demo-tab-pane" id="pane-spatial-canvas">
+          <div class="spatial-interactive-board" id="spatialBoard">
+            <div class="spatial-hint">Click nodes to inspect relationships & activate live pipeline links</div>
+            
+            <div class="interactive-node node-a active" data-node="Frontend SPA">
+              <div class="node-icon">📱</div>
+              <div class="node-details">
+                <strong>Next.js 15 Client</strong>
+                <span>State: Connected</span>
+              </div>
+            </div>
+
+            <div class="node-link-line line-ab"></div>
+
+            <div class="interactive-node node-b" data-node="Nova Core Relay">
+              <div class="node-icon">⚡</div>
+              <div class="node-details">
+                <strong>Nova CRDT Relay</strong>
+                <span>Throughput: 142k ops/s</span>
+              </div>
+            </div>
+
+            <div class="node-link-line line-bc"></div>
+
+            <div class="interactive-node node-c" data-node="Vector Database">
+              <div class="node-icon">🧠</div>
+              <div class="node-details">
+                <strong>HNSW Vector Store</strong>
+                <span>Items: 1.8M Vectors</span>
+              </div>
+            </div>
+
+            <div class="node-link-line line-bd"></div>
+
+            <div class="interactive-node node-d" data-node="Agent Swarm">
+              <div class="node-icon">🤖</div>
+              <div class="node-details">
+                <strong>Autonomous Swarm</strong>
+                <span>Active Workers: 16</span>
+              </div>
+            </div>
+
+            <div class="spatial-inspector-card" id="spatialInspector">
+              <div class="inspector-badge">NODE INSPECTOR</div>
+              <h4 id="inspectorTitle">Next.js 15 Client</h4>
+              <p id="inspectorBody">Connected via WebTransport with binary Protobuf serialization. Real-time DOM diffing synced to canvas viewport.</p>
+              <div class="inspector-stat">
+                <span>Packet Loss: 0.00%</span>
+                <span class="text-success">HEALTHY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Command Palette Sandbox -->
+        <div class="demo-tab-pane" id="pane-command-palette">
+          <div class="command-palette-container">
+            <div class="palette-input-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="paletteSearchInput" placeholder="Type a command or filter actions (e.g. 'branch', 'export', 'invite', 'deploy')...">
+              <kbd class="kbd-badge">ESC to Clear</kbd>
+            </div>
+            
+            <div class="palette-results-list" id="paletteResults">
+              <!-- Dynamically rendered items via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Live Telemetry Sandbox -->
+        <div class="demo-tab-pane" id="pane-live-telemetry">
+          <div class="telemetry-dashboard">
+            <div class="telemetry-card">
+              <div class="tel-header">
+                <span>Global Ingestion Rate</span>
+                <span class="live-pill">LIVE</span>
+              </div>
+              <div class="tel-value" id="telThroughput">1,248,930</div>
+              <div class="tel-sub">events / second worldwide</div>
+              <div class="simple-bar-chart" id="barChart">
+                <div class="bar" style="height: 60%;"></div>
+                <div class="bar" style="height: 85%;"></div>
+                <div class="bar" style="height: 45%;"></div>
+                <div class="bar" style="height: 90%;"></div>
+                <div class="bar" style="height: 75%;"></div>
+                <div class="bar" style="height: 95%;"></div>
+                <div class="bar" style="height: 80%;"></div>
+                <div class="bar" style="height: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="tel-header">
+                <span>Memory Footprint</span>
+                <span class="live-pill cyan">WASM ACCELERATED</span>
+              </div>
+              <div class="tel-value">18.4 <span class="unit">MB</span></div>
+              <div class="tel-sub">Ultra-efficient rust-compiled runtime</div>
+              <div class="progress-bar-wrap">
+                <div class="progress-fill" style="width: 24%;"></div>
+              </div>
+              <div class="tel-footer-text">76% lower consumption than Electron legacy tools</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="tel-header">
+                <span>Consensus Latency</span>
+                <span class="live-pill green">OPTIMAL</span>
+              </div>
+              <div class="tel-value" id="telPing">6.4 <span class="unit">ms</span></div>
+              <div class="tel-sub">Sub-frame sync frequency at 120 FPS</div>
+              <div class="edge-nodes-grid">
+                <span class="edge-point active" title="Frankfurt (fra1)">FRA: 4ms</span>
+                <span class="edge-point active" title="Silicon Valley (sjc1)">SJC: 7ms</span>
+                <span class="edge-point active" title="Tokyo (hnd1)">HND: 11ms</span>
+                <span class="edge-point active" title="Singapore (sin1)">SIN: 9ms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">SOCIAL VALIDATION</div>
+        <h2 class="section-title">Loved by High-Velocity Engineering Teams</h2>
+        <p class="section-description">
+          See why tech pioneers, Y Combinator founders, and enterprise architects call Nova their single source of operational truth.
+        </p>
+      </div>
+
+      <div class="testimonials-slider-wrapper">
+        <button class="slider-arrow prev-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="testimonials-track" id="testimonialTrack">
+          <!-- Card 1 -->
+          <div class="testimonial-card active">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “Nova completely replaced our fragmented stack of Notion, Miro, and Slack threads. Having autonomous agents summarize PRs and organize spatial roadmaps in real time cut our sprint planning overhead by 65%.”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&auto=format&fit=crop&q=80" alt="Sarah Chen" class="author-img">
+              <div class="author-info">
+                <h4 class="author-name">Dr. Sarah Chen</h4>
+                <span class="author-role">VP of Engineering at Hyperion Dynamics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “The zero-latency peer sync is unbelievable. We have 40 remote engineers collaborating in the same infinite spatial document during hackathons with zero stutter. It genuinely feels like sci-fi technology from 2035.”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80" alt="Marcus Thorne" class="author-img">
+              <div class="author-info">
+                <h4 class="author-name">Marcus Thorne</h4>
+                <span class="author-role">Co-Founder & CTO at Nexus Core</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              “Security was our biggest hesitation with AI workspaces. Nova's zero-knowledge client-side encryption and private cloud deploy gave our compliance board immediate peace of mind. We rolled it out company-wide in days.”
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&auto=format&fit=crop&q=80" alt="Amara Okafor" class="author-img">
+              <div class="author-info">
+                <h4 class="author-name">Amara Okafor</h4>
+                <span class="author-role">Chief Information Security Officer at VaultOne</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="slider-arrow next-btn" id="nextTestimonial" aria-label="Next Testimonial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <!-- Testimonial Dots Indicator -->
+      <div class="testimonial-dots" id="testimonialDots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">TRANSPARENT PRICING</div>
+        <h2 class="section-title">Scale Frictionlessly From Seed to IPO</h2>
+        <p class="section-description">
+          Start for free, then upgrade as your team's autonomous workflows expand. No hidden platform surcharges.
+        </p>
+
+        <!-- Billing Toggle -->
+        <div class="billing-toggle-container">
+          <span class="billing-label" id="labelMonthly">Monthly</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="pricingBillingToggle" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="billing-label active" id="labelAnnual">Annual</span>
+          <span class="discount-badge">Save 20% + 2 Months Free</span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Tier 1: Starter -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Explorer</h3>
+            <p class="plan-desc">For ambitious individual developers, designers, and solo architects.</p>
+            <div class="price-wrap">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="0" data-annual="0">0</span>
+              <span class="billing-cycle">/ forever</span>
+            </div>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> 3 Spatial Workspaces</li>
+            <li><span class="check">✓</span> 2,000 Autonomous AI operations/mo</li>
+            <li><span class="check">✓</span> Real-time P2P sync (up to 3 peers)</li>
+            <li><span class="check">✓</span> Standard 30-day version history</li>
+            <li class="disabled"><span class="cross">✕</span> Multi-agent coordination matrix</li>
+            <li class="disabled"><span class="cross">✕</span> Dedicated Private VPC deployment</li>
+          </ul>
+          <div class="pricing-action">
+            <button class="btn btn-outline btn-block select-plan-btn" data-plan="Explorer">Get Started Free</button>
+          </div>
+        </div>
+
+        <!-- Tier 2: Pro (Highlighted) -->
+        <div class="pricing-card featured">
+          <div class="popular-ribbon">MOST POPULAR</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">Pro Velocity</h3>
+            <p class="plan-desc">For fast-moving tech startups and collaborative product teams.</p>
+            <div class="price-wrap">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="29" data-annual="23">23</span>
+              <span class="billing-cycle">/ user / mo</span>
+            </div>
+            <div class="billed-text">Billed annually ($276/yr)</div>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> <strong>Unlimited</strong> Spatial Workspaces</li>
+            <li><span class="check">✓</span> <strong>50,000</strong> Autonomous AI operations/mo</li>
+            <li><span class="check">✓</span> Unlimited peer real-time sync</li>
+            <li><span class="check">✓</span> Full multi-agent orchestration swarm</li>
+            <li><span class="check">✓</span> Infinite granular time-travel history</li>
+            <li><span class="check">✓</span> Priority Slack & Discord engineering channel</li>
+          </ul>
+          <div class="pricing-action">
+            <button class="btn btn-primary btn-block glow-effect select-plan-btn" data-plan="Pro Velocity">Start 14-Day Free Trial</button>
+          </div>
+        </div>
+
+        <!-- Tier 3: Enterprise -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Enterprise Mesh</h3>
+            <p class="plan-desc">For scaling enterprises with custom compliance, SLA, and security needs.</p>
+            <div class="price-wrap">
+              <span class="currency">$</span>
+              <span class="price-value" data-monthly="89" data-annual="71">71</span>
+              <span class="billing-cycle">/ user / mo</span>
+            </div>
+            <div class="billed-text">Billed annually ($852/yr)</div>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Custom AI fine-tuning & local weights</li>
+            <li><span class="check">✓</span> Air-gapped on-premise or private AWS/GCP</li>
+            <li><span class="check">✓</span> Zero-Knowledge client-side master keys</li>
+            <li><span class="check">✓</span> SAML SSO / Okta / Azure AD SCIM</li>
+            <li><span class="check">✓</span> 99.99% contractual uptime SLA</li>
+            <li><span class="check">✓</span> Dedicated Solution Architect & 24/7 hotline</li>
+          </ul>
+          <div class="pricing-action">
+            <button class="btn btn-outline btn-block select-plan-btn" data-plan="Enterprise Mesh">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge">FREQUENTLY ASKED</div>
+        <h2 class="section-title">Common Questions About Nova</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does Nova differ from tools like Notion, Miro, or Linear?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Legacy tools separate notes, tasks, whiteboards, and AI into isolated silos. Nova merges all four into a single infinite, spatial graph. Crucially, Nova's background AI agents autonomously execute tasks rather than simply responding to static text prompts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can Nova run completely offline or on private cloud VPCs?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Nova is built with an offline-first CRDT foundation. All your data lives locally on your machine in high-speed SQLite and is synchronized across peers using end-to-end encrypted tunnels. We also support fully air-gapped self-hosted Kubernetes setups.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is our company proprietary data used to train public models?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Never. Nova enforces strict Zero-Data-Retention agreements with our inference infrastructure partners. Your codebases, documents, and canvas entities are never fed into foundation model training sets.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does the 14-day free trial work?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You get unrestricted access to all Pro Velocity tier features with no credit card required. At the end of the 14 days, you can choose to subscribe or downgrade smoothly to our Explorer tier without losing any data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-box glass-panel glow-border">
+        <div class="cta-content">
+          <div class="section-badge badge-glow">GET STARTED TODAY</div>
+          <h2 class="cta-title">Ready to Step into the Future of Work?</h2>
+          <p class="cta-sub">
+            Join over 45,000 builders redefining productivity with Nova. Experience intelligence at the edge.
+          </p>
+          
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-with-button">
+              <input type="email" id="emailInput" placeholder="Enter your work email..." required>
+              <button type="submit" class="btn btn-primary glow-effect">
+                <span>Request Early Access</span>
+              </button>
+            </div>
+            <span class="form-feedback" id="formFeedback"></span>
+          </form>
+
+          <div class="cta-perks">
+            <span>⚡ Instant Setup</span>
+            <span>🔒 SOC-2 Certified</span>
+            <span>💳 No Credit Card Required</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#" class="brand-logo footer-logo">
+            <div class="logo-symbol small">
+              <svg viewBox="0 0 36 36" fill="none">
+                <rect width="36" height="36" rx="10" fill="url(#logo-grad-footer)"/>
+                <path d="M10 26L18 10L26 26" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="18" cy="18" r="3.5" fill="#00f2fe"/>
+                <defs>
+                  <linearGradient id="logo-grad-footer" x1="0" y1="0" x2="36" y2="36">
+                    <stop stop-color="#7F00FF"/>
+                    <stop offset="1" stop-color="#00F2FE"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="brand-name">NOVA<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            The next-generation spatial computing and agentic intelligence canvas for visionary teams.
+          </p>
+          <div class="system-status-indicator">
+            <span class="status-pulse-dot"></span>
+            <span>All Global Systems Operational (100%)</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Spatial Canvas</a></li>
+            <li><a href="#features">Agent Swarm Mesh</a></li>
+            <li><a href="#demo">Live Interactive Demo</a></li>
+            <li><a href="#metrics">Edge Benchmarks</a></li>
+            <li><a href="#">CLI & SDKs</a></li>
+            <li><a href="#">Changelog <span class="footer-pill">v2.5.4</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#">Autonomous R&D Teams</a></li>
+            <li><a href="#">Generative Design Studios</a></li>
+            <li><a href="#">Quant Trading Operations</a></li>
+            <li><a href="#">Distributed Remote Labs</a></li>
+            <li><a href="#">Security & Compliance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Research Papers</a></li>
+            <li><a href="#">Careers <span class="footer-pill highlight">Hiring</span></a></li>
+            <li><a href="#">Brand Guidelines</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © <span id="currentYear">2026</span> Nova Technologies Inc. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="X / Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Discord">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Modal: Get Early Access / Launch Workspace -->
+  <div class="modal-overlay" id="accessModal" aria-hidden="true" role="dialog">
+    <div class="modal-card glass-panel glow-border">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge">PRIORITY ACCESS</div>
+        <h3 class="modal-title" id="modalTitle">Deploy Your Nova Workspace</h3>
+        <p class="modal-subtitle">Provision an edge instance with pre-configured multi-agent capabilities.</p>
+      </div>
+
+      <form class="modal-form" id="modalForm">
+        <div class="form-group">
+          <label for="modalFullName">Full Name</label>
+          <input type="text" id="modalFullName" placeholder="Ada Lovelace" required>
+        </div>
+
+        <div class="form-group">
+          <label for="modalEmail">Work Email</label>
+          <input type="email" id="modalEmail" placeholder="ada@company.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="modalRole">Primary Role</label>
+            <select id="modalRole">
+              <option value="eng">Engineering Leader</option>
+              <option value="architect">Software Architect</option>
+              <option value="product">Product / Design Lead</option>
+              <option value="founder">Founder / Executive</option>
+              <option value="ai">AI / ML Researcher</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="modalTeamSize">Team Size</label>
+            <select id="modalTeamSize">
+              <option value="solo">1 - 5 members</option>
+              <option value="mid" selected>6 - 25 members</option>
+              <option value="scale">26 - 100 members</option>
+              <option value="enterprise">100+ members</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-checkbox-group">
+          <input type="checkbox" id="modalCheckbox" checked>
+          <label for="modalCheckbox">Enable automatic local P2P sync and edge telemetry indexing</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block glow-effect" id="modalSubmitBtn">
+          <span>Provision Instant Sandbox</span>
+          <svg viewBox="0 0 16 16" fill="none" class="btn-arrow">
+            <path d="M3.33 8H12.67M12.67 8L8 3.33M12.67 8L8 12.67" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </form>
+
+      <div class="modal-success-state" id="modalSuccessState">
+        <div class="success-icon-wrap">✓</div>
+        <h3>Workspace Provisioned!</h3>
+        <p>A secure cryptographic handshake link has been dispatched to your email. Check your inbox to initialize your neural cluster.</p>
+        <button class="btn btn-outline" id="modalSuccessDoneBtn">Return to Platform</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Modal: Video Tour Modal -->
+  <div class="modal-overlay" id="tourModal" aria-hidden="true" role="dialog">
+    <div class="modal-card modal-large glass-panel glow-border">
+      <button class="modal-close-btn" id="closeTourModalBtn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <div class="modal-badge">ARCHITECTURAL OVERVIEW</div>
+        <h3 class="modal-title">Nova Autonomous Architecture (2-Min Tour)</h3>
+      </div>
+      <div class="video-preview-wrapper">
+        <div class="video-mockup-screen">
+          <div class="pulse-radar"></div>
+          <div class="video-overlay-details">
+            <div class="badge-tag">INTERACTIVE SIMULATION</div>
+            <h4>Nova Spatial Kernel & Edge Swarm</h4>
+            <p>Demonstrating conflict-free CRDT resolution, spatial memory mapping, and autonomous agent delegation.</p>
+            <div class="video-play-button" id="tourPlayBtn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <span class="video-duration">Streaming 4K 60FPS Sandbox Feed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

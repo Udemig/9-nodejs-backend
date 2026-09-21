@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova — The Future of Digital Workspaces</title>
+    <meta
+      name="description"
+      content="Nova unifies canvas, presence, and flow into one premium digital workspace for ambitious teams."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-accent="violet">
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <header class="site-header" id="header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top">
+          <span class="logo-mark">N</span>
+          Nova
+        </a>
+        <nav class="nav" id="nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <div class="dropdown" data-dropdown>
+            <button class="dropdown-btn" type="button" aria-expanded="false" aria-haspopup="true">
+              Products
+              <span class="chevron"></span>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#demo" role="menuitem">Neural Canvas</a>
+              <a href="#demo" role="menuitem">Signal Flow</a>
+              <a href="#pricing" role="menuitem">Enterprise Vault</a>
+            </div>
+          </div>
+          <a href="#stories">Stories</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="accentBtn" type="button" aria-label="Cycle accent color">
+            Hue
+          </button>
+          <button class="btn btn-ghost" data-open-modal type="button">Sign in</button>
+          <button class="btn btn-primary" data-open-modal type="button">Get access</button>
+          <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Workspace OS · Private beta</p>
+            <h1>Work at the speed of thought, not the speed of tabs.</h1>
+            <p class="lede">
+              Nova folds canvases, live presence, and encrypted flow into one luminous
+              surface — so teams stop stitching tools and start shipping.
+            </p>
+            <div class="hero-ctas">
+              <button class="btn btn-primary btn-lg" data-open-modal type="button">
+                Request early access
+              </button>
+              <a class="btn btn-ghost btn-lg" href="#demo">Watch the product</a>
+            </div>
+            <p class="hero-note">No credit card. Invite-only clusters in 14 regions.</p>
+          </div>
+          <div class="hero-stage reveal" aria-hidden="true">
+            <div class="glass stage-card">
+              <div class="stage-bar">
+                <span></span><span></span><span></span>
+                <strong>nova://orbit-04</strong>
+              </div>
+              <div class="stage-body">
+                <div class="pulse-ring"></div>
+                <div class="node n1">Canvas</div>
+                <div class="node n2">Pulse</div>
+                <div class="node n3">Vault</div>
+                <div class="beam"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Capabilities</p>
+            <h2>Four systems. One gravitational center.</h2>
+          </header>
+          <div class="feature-grid">
+            <article class="glass card reveal">
+              <div class="icon">01</div>
+              <h3>Neural Canvas</h3>
+              <p>Infinite boards that remember spatial context, versioned like code, shared like thought.</p>
+            </article>
+            <article class="glass card reveal">
+              <div class="icon">02</div>
+              <h3>Live Presence</h3>
+              <p>Avatars, cursors, and voice huddles that feel like a room — without the lag of a room.</p>
+            </article>
+            <article class="glass card reveal">
+              <div class="icon">03</div>
+              <h3>Signal Flow</h3>
+              <p>Automations that route work between people and models with a visible, auditable trail.</p>
+            </article>
+            <article class="glass card reveal">
+              <div class="icon">04</div>
+              <h3>Vault</h3>
+              <p>Zero-knowledge storage with regional keys. Your constellation, your gravity well.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" id="stats">
+        <div class="container stats-row">
+          <div class="stat reveal">
+            <strong data-count="4800" data-suffix="+">0</strong>
+            <span>teams in orbit</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="12" data-suffix="ms">0</strong>
+            <span>median sync latency</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="99" data-suffix=".99%">0</strong>
+            <span>uptime last year</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="41" data-suffix="">0</strong>
+            <span>countries live</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo" id="demo">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Interactive product</p>
+            <h2>Pilot the workspace without leaving the page.</h2>
+          </header>
+          <div class="demo-shell glass reveal">
+            <div class="demo-toolbar">
+              <div class="tabs" role="tablist">
+                <button class="tab is-active" type="button" role="tab" aria-selected="true" data-view="canvas">
+                  Canvas
+                </button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-view="pulse">
+                  Pulse
+                </button>
+                <button class="tab" type="button" role="tab" aria-selected="false" data-view="vault">
+                  Vault
+                </button>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="densityToggle" />
+                <span>Compact density</span>
+              </label>
+            </div>
+            <div class="demo-canvas" id="demoCanvas" data-view="canvas">
+              <p class="demo-caption" id="demoCaption">Spatial board · 18 live nodes</p>
+              <div class="demo-nodes">
+                <button class="demo-node" type="button" data-signal="brief">Sprint brief</button>
+                <button class="demo-node" type="button" data-signal="model">Model pass</button>
+                <button class="demo-node" type="button" data-signal="review">Design review</button>
+                <button class="demo-node" type="button" data-signal="ship">Ship gate</button>
+              </div>
+              <p class="demo-log" id="demoLog">Select a node to route signal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stories" id="stories">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Signal from the field</p>
+            <h2>Teams that left the tab graveyard.</h2>
+          </header>
+          <div class="story-grid">
+            <blockquote class="glass card reveal">
+              <p>“Nova collapsed twelve tools into one surface. Standups feel like cinema, not calendar debris.”</p>
+              <footer>
+                <strong>Amara Chen</strong>
+                <span>VP Product, Helix Labs</span>
+              </footer>
+            </blockquote>
+            <blockquote class="glass card reveal">
+              <p>“The vault finally let us keep research in-region without slowing the canvas. Legal slept.”</p>
+              <footer>
+                <strong>Jonas Berg</strong>
+                <span>CISO, Northline</span>
+              </footer>
+            </blockquote>
+            <blockquote class="glass card reveal">
+              <p>“Presence is the feature we didn’t know we were starving for. Remote stopped feeling remote.”</p>
+              <footer>
+                <strong>Leila Okonkwo</strong>
+                <span>Studio Lead, Atelier Nine</span>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing" id="pricing">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Access tiers</p>
+            <h2>Choose the orbit that fits your crew.</h2>
+            <div class="billing">
+              <span>Monthly</span>
+              <button class="toggle" id="billingToggle" type="button" role="switch" aria-checked="false" aria-label="Yearly billing">
+                <span class="knob"></span>
+              </button>
+              <span>Yearly <em>−20%</em></span>
+            </div>
+          </header>
+          <div class="price-grid">
+            <article class="glass card price-card reveal">
+              <h3>Starter</h3>
+              <p class="amount"><span data-month="24" data-year="19">$24</span><small>/seat</small></p>
+              <ul>
+                <li>3 canvases</li>
+                <li>Core presence</li>
+                <li>Community support</li>
+              </ul>
+              <button class="btn btn-ghost" data-open-modal type="button">Start</button>
+            </article>
+            <article class="glass card price-card featured reveal">
+              <p class="badge">Most chosen</p>
+              <h3>Orbit</h3>
+              <p class="amount"><span data-month="49" data-year="39">$49</span><small>/seat</small></p>
+              <ul>
+                <li>Unlimited canvases</li>
+                <li>Signal Flow</li>
+                <li>SSO + audit trail</li>
+              </ul>
+              <button class="btn btn-primary" data-open-modal type="button">Join Orbit</button>
+            </article>
+            <article class="glass card price-card reveal">
+              <h3>Horizon</h3>
+              <p class="amount"><span data-month="89" data-year="71">$89</span><small>/seat</small></p>
+              <ul>
+                <li>Dedicated cluster</li>
+                <li>Regional vault keys</li>
+                <li>White-glove success</li>
+              </ul>
+              <button class="btn btn-ghost" data-open-modal type="button">Talk to us</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#top"><span class="logo-mark">N</span> Nova</a>
+          <p>Digital workspaces for teams that refuse to fragment.</p>
+        </div>
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#demo">Demo</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#stories">Stories</a>
+          <button type="button" data-open-modal>Careers</button>
+          <button type="button" data-open-modal>Press</button>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <button type="button" data-open-modal>Privacy</button>
+          <button type="button" data-open-modal>Security</button>
+          <p class="copy">© 2026 Nova Labs</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="modal" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="glass modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="icon-btn close" type="button" data-close-modal aria-label="Close">×</button>
+        <h2 id="modalTitle">Request early access</h2>
+        <p>We’ll send an orbit invite when a cluster opens in your region.</p>
+        <form id="accessForm">
+          <label>
+            Work email
+            <input type="email" name="email" required placeholder="you@company.com" />
+          </label>
+          <label>
+            Team size
+            <select name="size" required>
+              <option value="">Select</option>
+              <option>2–10</option>
+              <option>11–50</option>
+              <option>51–200</option>
+              <option>200+</option>
+            </select>
+          </label>
+          <button class="btn btn-primary btn-lg" type="submit">Join the waitlist</button>
+        </form>
+        <p class="form-ok" id="formOk" hidden>You’re on the list. Watch for a signal from nova@labs.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

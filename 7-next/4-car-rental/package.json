@@ -1,5 +1,5 @@
 {
-  "name": "3-ticket-dashboard",
+  "name": "4-car-rental",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "chart.js": "^4.5.1",
-    "lucide-react": "^1.45.0",
-    "mongoose": "^9.10.0",
     "next": "16.3.5",
     "react": "19.2.8",
-    "react-chartjs-2": "^5.3.1",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
