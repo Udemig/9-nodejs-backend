@@ -1,0 +1,396 @@
+{
+  "info": {
+    "_postman_id": "a931e92d-9442-4f99-b1d5-862d2948c901",
+    "name": "Morent Car Rental API",
+    "description": "Comprehensive Postman collection for Morent Car Rental platform backend endpoints including database seeding, user authentication, and vehicle catalog search, filtering, and detail endpoints.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "carId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "0. Database Seeding",
+      "item": [
+        {
+          "name": "Seed Database (GET /api/seed)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/seed",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "seed"]
+            },
+            "description": "Populates MongoDB with 12 canonical luxury vehicles (Turkish locations, Turkish specifications, and localized descriptions). Resets existing vehicles to ensure a clean state."
+          },
+          "response": []
+        },
+        {
+          "name": "Seed Database (POST /api/seed)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/seed",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "seed"]
+            },
+            "description": "POST trigger for populating/resetting seed vehicles."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "1. Authentication",
+      "item": [
+        {
+          "name": "Register New User (POST /api/auth/register)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Ahmet\",\n  \"lastName\": \"Yılmaz\",\n  \"email\": \"ahmet.yilmaz@example.com\",\n  \"phone\": \"+90 532 123 4567\",\n  \"password\": \"SecurePass123!\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/register",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "register"]
+            },
+            "description": "Registers a new user account with bcrypt password hashing (12 rounds) and input validation."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Current Session (GET /api/auth/session)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/session",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "session"]
+            },
+            "description": "Returns current NextAuth session payload if authenticated cookie exists."
+          },
+          "response": []
+        },
+        {
+          "name": "NextAuth Providers (GET /api/auth/providers)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/providers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "providers"]
+            },
+            "description": "Lists configured NextAuth authentication providers (Credentials and Google)."
+          },
+          "response": []
+        },
+        {
+          "name": "NextAuth CSRF Token (GET /api/auth/csrf)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/csrf",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "csrf"]
+            },
+            "description": "Retrieves the CSRF token required for form-based credential sign-in."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "2. Vehicles / Cars API",
+      "item": [
+        {
+          "name": "Get All Cars (Default Pagination)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.cars && jsonData.cars.length > 0) {",
+                  "    pm.collectionVariables.set('carId', jsonData.cars[0]._id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"]
+            },
+            "description": "Fetches vehicles with default pagination (limit 9, sorted by popularity). Automatically sets collection variable 'carId' from the first result."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Popular Vehicles (Homepage)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?popular=true",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "popular",
+                  "value": "true"
+                }
+              ]
+            },
+            "description": "Fetches vehicles flagged as popular for the homepage showcase carousel."
+          },
+          "response": []
+        },
+        {
+          "name": "Search Vehicles by Keyword",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?search=Porsche",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "Porsche"
+                }
+              ]
+            },
+            "description": "Performs case-insensitive regex search against car brand, model, and category."
+          },
+          "response": []
+        },
+        {
+          "name": "Filter by Category (Turkish: Spor, Elektrikli)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?category=Spor,Elektrikli",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "category",
+                  "value": "Spor,Elektrikli"
+                }
+              ]
+            },
+            "description": "Filters vehicles belonging to specific categories (e.g., Spor, Elektrikli, Sedan, SUV)."
+          },
+          "response": []
+        },
+        {
+          "name": "Filter by Transmission (Turkish: Otomatik, PDK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?transmission=Otomatik,PDK",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "transmission",
+                  "value": "Otomatik,PDK"
+                }
+              ]
+            },
+            "description": "Filters vehicles by transmission type (Otomatik, Manuel, PDK, Tek Vites)."
+          },
+          "response": []
+        },
+        {
+          "name": "Filter by Fuel Type (Turkish: Elektrik, Benzin)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?fuelType=Elektrik",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "fuelType",
+                  "value": "Elektrik"
+                }
+              ]
+            },
+            "description": "Filters vehicles by fuel type (Elektrik, Benzin, Hibrit, Dizel)."
+          },
+          "response": []
+        },
+        {
+          "name": "Filter by Seating Capacity (4 Seats)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?capacity=4",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "capacity",
+                  "value": "4"
+                }
+              ]
+            },
+            "description": "Filters vehicles by passenger seating capacity (e.g., 2, 4, 5, 7)."
+          },
+          "response": []
+        },
+        {
+          "name": "Filter by Max Daily Price ($200)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?maxPrice=200",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "maxPrice",
+                  "value": "200"
+                }
+              ]
+            },
+            "description": "Filters vehicles whose daily rental price is less than or equal to maxPrice."
+          },
+          "response": []
+        },
+        {
+          "name": "Sort Vehicles (Price: Low to High)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?sort=price_asc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "price_asc"
+                }
+              ]
+            },
+            "description": "Sorts vehicles by dailyPrice ascending."
+          },
+          "response": []
+        },
+        {
+          "name": "Sort Vehicles (Price: High to Low)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?sort=price_desc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "price_desc"
+                }
+              ]
+            },
+            "description": "Sorts vehicles by dailyPrice descending."
+          },
+          "response": []
+        },
+        {
+          "name": "Sort Vehicles by Rating",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?sort=rating",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "rating"
+                }
+              ]
+            },
+            "description": "Sorts vehicles by customer rating and review count descending."
+          },
+          "response": []
+        },
+        {
+          "name": "Pagination Controls (Page 2, Limit 4)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars?page=2&limit=4",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "limit",
+                  "value": "4"
+                }
+              ]
+            },
+            "description": "Demonstrates pagination with page and limit parameters, returning pagination metadata."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Car Details by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/cars/{{carId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "cars", "{{carId}}"]
+            },
+            "description": "Fetches complete technical specifications, equipment, and rental details for a single vehicle by its MongoDB ObjectId. Run 'Get All Cars' first to automatically populate the {{carId}} variable."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
