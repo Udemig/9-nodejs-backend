@@ -1,0 +1,197 @@
+# ============================================================================
+# Food Delivery Microservices - Docker Compose
+# ============================================================================
+# Bu dosya, projenin TÜM altyapısını tek komutla ayağa kaldırır:
+#
+#   docker compose up -d        → arka planda başlat
+#   docker compose logs -f      → logları izle
+#   docker compose down         → her şeyi durdur
+#   docker compose down -v      → volume'ları da sil (DB temizler)
+#
+# ÖĞRETİCİ NOT:
+#   - "depends_on" servislerin başlama SIRASINI belirler ama "hazır olmasını"
+#     beklemez. Bu yüzden uygulamalarımızda RabbitMQ/Mongo bağlantısı için
+#     retry/reconnect mantığı koyduk.
+#   - RabbitMQ management UI: http://localhost:15672 (guest/guest)
+#     Burada exchange, queue, message akışını GÖZLE izleyebilirsin.
+#   - MongoDB için ayrı veritabanları kullanıyoruz (mikroservis prensibi:
+#     her servisin kendi DB'si olur, başka servisle paylaşmaz).
+# ============================================================================
+
+services:
+  # MongoDB - her servis kendi veritabanını kullanır
+  mongodb:
+    image: mongo:7
+    container_name: food-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - food-net
+
+  # RabbitMQ - mesaj broker
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: food-rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672" # AMQP protokol portu
+      - "15672:15672" # WEB paneli portu
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin123
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - food-net
+
+  # Mikroservisler
+  auth:
+    image: node:20-alpine
+    container_name: food-auth
+    working_dir: /app
+    command: sh -c "npm install && npx tsx watch ./src/app.ts"
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+      MONGODB_URI: mongodb://mongodb:27017/food_ms_auth
+      JWT_SECRET: lutfen-bu-degeri-gizli1-bir-degqqr-yap
+      RABBITMQ_URI: amqp://admin:admin123@rabbitmq:5672
+      RATE_LIMIT_WINDOW: 600000
+      RATE_LIMIT_MAX_REQ: 100
+      CHOKIDAR_USEPOLLING: true
+      CHOKIDAR_INTERVAL: 500
+    volumes:
+      - ./auth:/app
+      - /app/node_modules
+    depends_on:
+      mongodb:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - food-net
+
+  delivery:
+    image: node:20-alpine
+    container_name: food-delivery
+    working_dir: /app
+    command: sh -c "npm install && npx tsx watch ./src/app.ts"
+    ports:
+      - "3002:3002"
+    environment:
+      PORT: 3002
+      MONGODB_URI: mongodb://mongodb:27017/food_ms_delivery
+      JWT_SECRET: lutfen-bu-degeri-gizli1-bir-degqqr-yap
+      RABBITMQ_URI: amqp://admin:admin123@rabbitmq:5672
+      RATE_LIMIT_WINDOW: 600000
+      RATE_LIMIT_MAX_REQ: 100
+      CHOKIDAR_USEPOLLING: true
+      CHOKIDAR_INTERVAL: 500
+    volumes:
+      - ./delivery:/app
+      - /app/node_modules
+    depends_on:
+      mongodb:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - food-net
+
+  order:
+    image: node:20-alpine
+    container_name: food-order
+    working_dir: /app
+    command: sh -c "npm install && npx tsx watch ./src/app.ts"
+    ports:
+      - "3003:3003"
+    environment:
+      PORT: 3003
+      MONGODB_URI: mongodb://mongodb:27017/food_ms_order
+      JWT_SECRET: lutfen-bu-degeri-gizli1-bir-degqqr-yap
+      RABBITMQ_URI: amqp://admin:admin123@rabbitmq:5672
+      RATE_LIMIT_WINDOW: 600000
+      RATE_LIMIT_MAX_REQ: 100
+      CHOKIDAR_USEPOLLING: true
+      CHOKIDAR_INTERVAL: 500
+    volumes:
+      - ./order:/app
+      - /app/node_modules
+    depends_on:
+      mongodb:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - food-net
+
+  restaurant:
+    image: node:20-alpine
+    container_name: food-restaurant
+    working_dir: /app
+    command: sh -c "npm install && npx tsx watch ./src/app.ts"
+    ports:
+      - "3004:3004"
+    environment:
+      PORT: 3004
+      MONGODB_URI: mongodb://mongodb:27017/food_ms_restaurant
+      JWT_SECRET: lutfen-bu-degeri-gizli1-bir-degqqr-yap
+      RABBITMQ_URI: amqp://admin:admin123@rabbitmq:5672
+      RATE_LIMIT_WINDOW: 600000
+      RATE_LIMIT_MAX_REQ: 100
+      CHOKIDAR_USEPOLLING: true
+      CHOKIDAR_INTERVAL: 500
+    volumes:
+      - ./restaurant:/app
+      - /app/node_modules
+    depends_on:
+      mongodb:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+    networks:
+      - food-net
+
+  gateway:
+    image: node:20-alpine
+    container_name: food-gateway
+    working_dir: /app
+    command: sh -c "npm install && npx tsx watch ./app.ts"
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      AUTH_SERVICE_URL: http://auth:3001
+      DELIVERY_SERVICE_URL: http://delivery:3002
+      ORDER_SERVICE_URL: http://order:3003
+      RESTAURANT_SERVICE_URL: http://restaurant:3004
+    volumes:
+      - ./gateway:/app
+      - /app/node_modules
+    depends_on:
+      - auth
+      - order
+      - delivery
+      - restaurant
+    networks:
+      - food-net
+
+# Tek bir izole network → servisler birbirine container adıyla erişir
+# (örn. "mongodb", "rabbitmq", "auth"). Host'tan sadece exposed portlar görünür.
+networks:
+  food-net:
+    driver: bridge
+
+# Veri kalıcılığı için named volume'lar (container silinince DB silinmesin)
+volumes:
+  mongo-data:
+  rabbitmq-data:
