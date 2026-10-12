@@ -2,7 +2,7 @@ import type { Request, Response, NextFunction } from "express";
 import AppError from "./utils/app-eror.js";
 import jwt from "jsonwebtoken";
 import { validateEnv } from "./utils/env.js";
-import type { JWTPayload } from "./types/index.js";
+import type { JWTPayload, UserRole } from "./types/index.js";
 
 //* 404 Middleware
 export const notFoundMiddleware = (err: Error, req: Request, res: Response, next: NextFunction) => {
@@ -45,4 +45,20 @@ export const authenticate = async (req: Request, res: Response, next: NextFuncti
     if (error instanceof jwt.TokenExpiredError) throw new AppError("Tokenın süresi doldu", 401);
     throw new AppError("Token geçersiz", 401);
   }
+};
+
+//* Rol Kontrol Middleware
+export const authorize = (roles: UserRole[]) => {
+  // istek atan kullanıcnın bilgilerini req nesnesi üzerinden erişmek için route handler fonksiyonu tanımla
+  return (req: Request, res: Response, next: NextFunction): void => {
+    // kullanıcı yoksa:
+    if (!req.user) throw new AppError("Kullanıcı bulunamadı");
+
+    // rolü yetersizse:
+    if (!roles.includes(req.user.role))
+      throw new AppError("Bu işlemi gerçekleştirmek için yetkiniz yok", 403);
+
+    // rolü yeterliyse:
+    next();
+  };
 };

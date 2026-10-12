@@ -24,3 +24,40 @@ export interface JWTPayload {
   iat: number;
   exp: number;
 }
+
+export interface IOrderItem {
+  productId: string;
+  name: string;
+  price: number;
+  quantity: number;
+}
+
+export interface IAddress {
+  title: string;
+  address: string;
+  city: string;
+  district: string;
+  postalCode: string;
+  isDefault?: boolean;
+}
+
+export type OrderStatus =
+  | "pending"
+  | "confirmed"
+  | "preparing"
+  | "ready"
+  | "on_the_way"
+  | "delivered"
+  | "cancelled";
+
+export interface IOrder {
+  userId: string;
+  restaurantId: string;
+  items: IOrderItem[];
+  deliveryFee: number;
+  totalPrice?: number;
+  deliveryAddress: IAddress;
+  paymentMethod: "credit_card" | "cash" | "mobile_payment";
+  status: OrderStatus;
+  specialInstructions: string | undefined;
+}
