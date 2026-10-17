@@ -30,6 +30,7 @@ export type OrderStatus =
   | "pending"
   | "confirmed"
   | "preparing"
+  | "assigned"
   | "ready"
   | "on_the_way"
   | "delivered"

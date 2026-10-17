@@ -27,7 +27,7 @@ router.patch(
 
 router.get("/:orderId/track", authenticate, deliveryController.trackDelivery);
 
-router.get(
+router.patch(
   "/courier",
   authenticate,
   authorize(["admin", "courier"]),
